@@ -1,0 +1,1 @@
+local memory for storing files that are going to be transferred. Stores always in [[binary]]

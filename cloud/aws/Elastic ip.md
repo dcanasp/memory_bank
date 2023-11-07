@@ -1,0 +1,1 @@
+gives me an [[Ip]] that does NOT change event if the server is turned off or deleted

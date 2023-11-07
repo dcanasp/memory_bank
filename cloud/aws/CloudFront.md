@@ -1,0 +1,1 @@
+The [[CDN]] of aws, you can make it cache data and return it, or my favorite use, make all of the request ([[https]] and [[http]]) turn to http only and be redirected to your [[EC2]] 

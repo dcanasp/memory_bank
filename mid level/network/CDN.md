@@ -1,6 +1,6 @@
-Content Delivery Network or Content Distribution Network. 
+Content Delivery [[Network]] or Content Distribution [[Network]].
 
-Instead of saving all of the data in your servers, the CDN saves the heavy data on it self, so the user does not have to go to the end of the world to find an image. There should be multiple CDN's and located in different parts of the world, so it loads faster for everyone
+Instead of saving all of the data in your [[server]], the CDN saves the heavy data on it self, so the user does not have to go to the end of the world to find an image. There should be multiple CDN's and located in different parts of the world, so it loads faster for everyone
 
 CDN can deliver 2 different things.
 

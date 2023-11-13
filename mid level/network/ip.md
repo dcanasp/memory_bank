@@ -6,7 +6,9 @@ A big problem with Ipv4 is that you normally only get one public IP per house, a
 
 Ipv6 is notably larger, 2^128. so there will not be the current problem with ipv4. 
 
-There are also two types of ip's. Public and private, public are the ones that can directly connect to the internet. Private are the ones that only can be access inside the same network:
+There are also two types of ip's. Public and private, public are the ones that can directly connect to the internet. Private are the ones that only can be access inside the same [[network]]:
 - Class A: `10.0.0.0` to `10.255.255.255`
 - Class B: `172.16.0.0` to `172.31.255.255`
 - Class C: `192.168.0.0` to `192.168.255.255`
+
+They are normally set via [[dhcp]] 

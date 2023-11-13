@@ -1,4 +1,4 @@
-what runs your code. It consists of 
+what runs your code. It consists of the [[hardware]] and the [[software]]
 - [[memory]]
 - [[RAM]]
 - [[Buffer]]

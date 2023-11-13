@@ -9,7 +9,7 @@
 	Creating the channels for machines to talk to each other
 - Transport
 	Sending (and losing) the packages, TCP handshake
-- Network
+- [[Network]]
 	Where you send your packages to a host
 - Data link
 	Where mediums on the same network speak

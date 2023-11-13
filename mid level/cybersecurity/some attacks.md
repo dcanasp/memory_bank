@@ -4,7 +4,7 @@ Even though [[RSA]] or [[AES]] cannot be broken now, this attack consists on sav
 
 # DOS
 
-Denial of service, overcharging a server with so many request that it cannot handle all of it and just shuts down
+Denial of service, overcharging a [[server]] with so many request that it cannot handle all of it and just shuts down
 
 
 # DDOS
@@ -12,7 +12,7 @@ Denial of service, overcharging a server with so many request that it cannot han
 Distributed [[some attacks|DOS]], now a lot of different [[computer|computers]] are attack you, banning [[ip]] is not enough what now? There can be millions, with [[IOT]] even your thermostat is a computer
 
 # man in the middle
-# spoofing
+# [[spoofing]]
 
 
 

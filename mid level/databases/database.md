@@ -1,4 +1,4 @@
-where you store your data, can be a [[relational database]] or [[non relational database]], the key difference being where you can create [[foreign keys]]
+where you store your data, can be a [[relational database]] or [[non relational database]], the key difference being where you can create [[relational database|foreign keys]]
 
 Most on them use a [[database manager]], or you can talk to them directly most common for smaller databases like [[sqlite]] or cloud databases like [[firestore]]
 

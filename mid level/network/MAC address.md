@@ -1,4 +1,4 @@
-A MAC (Media Access Control) address is a unique identifier assigned to network interfaces for communications at the data link layer of a network segment. The primary purpose of a MAC address is to ensure that each device on a network has a unique, hardware-based identifier for the local network. This is crucial for controlling access and maintaining the integrity of the network.
+A MAC (Media Access Control) address is a unique identifier assigned to [[network]] interfaces for communications at the data link layer of a network segment. The primary purpose of a MAC address is to ensure that each device on a network has a unique, hardware-based identifier for the local network. This is crucial for controlling access and maintaining the integrity of the network.
 
 MAC addresses six octets in hexadecimal separated by colons or hyphens (`00:1A:2B:3C:4D:5E`).
 

@@ -1,4 +1,4 @@
-The server, you can have any [[OS]] you like, but the recommended by them is Amazon linux.
+The [[server]], you can have any [[OS]] you like, but the recommended by them is Amazon linux.
 
 This server will have a public [[ip]], just like a private one. to connect do it from the aws console, or from your local cmd. With this option you will need a .pem file, that stores your key (they generate it when creating)
 

@@ -2,7 +2,7 @@ A program that allows to create queues. these queues live (by default) on a data
 
 They are really useful to maintain your data alive when the request are not sure to arrive and comeback instantly. There are two parts, the sender and receiver, each has it's unique code, but that is more amqp than RabbitMQ
 
-there are multiple ways to do it, a simple one, where the message only goes (great for creating a register on the database or something like that). Or another where you wait for a response RPC (great for task that take some time but will work and you need the response)
+there are multiple ways to do it, a simple one, where the message only goes (great for creating a register on the database or something like that). Or another where you wait for a response [[RPC]] (great for task that take some time but will work and you need the response)
 
 
 It's important to understand that in it's core, RabbitMQ it's just a [[database]], so just treat it as such, the database lives on wherever you like. How you connect to the database it's your problem

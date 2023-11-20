@@ -1,0 +1,1 @@
+At the end of the day, all of the internet communicates through cables, and to communicate from America to Europe we need cables, big cables that mostly use [[optic fiber]] to transmit this information, These are on the sea floor and protected in big tubes of concrete, this is the limit to the max [[bandwidth]] you can have if on different continents (unless you have a [[CDN]])  

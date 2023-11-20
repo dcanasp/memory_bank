@@ -1,4 +1,4 @@
-
+#todo 
 # gauss jordan with noise
 
 you can add a noise to the normal multiplication of matrix, when you multiply and then add the noise, this noise multiplies, this makes a new matrix that scales to quantum atacks

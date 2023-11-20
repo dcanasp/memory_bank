@@ -1,4 +1,5 @@
 0 1, power 2 based counting system, anything can and must be a binary, a word via [[ascci]] or unicode, an image via %%not sure%%,  
+#todo 
 
 A single 0 or 1 it's a bit. 8 bits are a byte, 2 bytes is a word 
 

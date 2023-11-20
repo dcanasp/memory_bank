@@ -1,3 +1,4 @@
+#todo 
 # harvest now decrypt later
 
 Even though [[RSA]] or [[AES]] cannot be broken now, this attack consists on saving all of this information and eventually it will be breakable, with [[post quantum cryptography]] or something like that
@@ -14,9 +15,11 @@ Distributed [[some attacks|DOS]], now a lot of different [[computer|computers]] 
 # man in the middle
 # [[spoofing]]
 
-
-
-
 # phishing
 
+but always take into account the [[Biggest risk]]
 
+# dictionary attacks
+saving all of the hashes
+
+# brute force

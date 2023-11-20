@@ -1,9 +1,9 @@
-The name many times is used to refer to TSL, NO se debe usar SSL. 
+The name many times is used to refer to TSL, SSL is the older version and should NOT be used. 
 
-usa SHA-256
+uses the [[hash]] SHA-256
 
 
-# con oppenssl
+# with oppenssl
 
 ```bash
 openssl genpkey -algorithm RSA -out private-key.pem
@@ -16,4 +16,4 @@ cat private-key.pem signed-certificate.crt > key-pair.pem
 openssl x509 -signkey key-pair.pem -in certificate.csr -req -days 365 -out certificate.crt
 ```
 
-estos tienen que estar en algun web [[server]] software [[nginx]] or [[httpd]] 
+this have to be in some web [[server]] software like [[nginx]] or [[httpd]] 

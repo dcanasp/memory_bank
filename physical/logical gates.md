@@ -4,7 +4,7 @@ they receive 1 or 2 bits, and give a result depending on the gate, the most used
 |x|y|r|
 |0|0|0
 - Or
-
+#todo 
 - Xor
 
 - Not

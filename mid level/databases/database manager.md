@@ -1,6 +1,6 @@
 they are the ones that make your database readable when developing.
 
-some are: pgAdmin, MySQL Workbench (for only one sql database language) or Dbeaver for any database
+some are: pgAdmin, MySQL Workbench (for only one sql database language) or Dbeaver, tableplus for any database
 
 they allow/give:
 

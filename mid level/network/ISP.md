@@ -1,0 +1,1 @@
+The one who owns the access to the internet, this are the ones who have the [[DNS]] tables and build the infrastructure to connect to the world. You pay them a monthly fee to access it (eg. claro,etb,starlink). They are the responsible of building the [[Submarine communications cables]]

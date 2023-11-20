@@ -22,3 +22,5 @@ It also has the response codes:
 	- 500-599
 		server errors (when you can't do anything)
 
+
+Mostly it's paired with [[REST]]

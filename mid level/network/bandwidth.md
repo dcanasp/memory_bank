@@ -1,0 +1,1 @@
+The maximum amount of data transmitted over an internet connection ([[network]]) in a given amount of time. Bandwidth is often mistaken for internet speed when it's actually the volume of information that can be sent over a connection in a measured amount of time – calculated in megabits per second (Mbps)

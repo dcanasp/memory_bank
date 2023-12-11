@@ -45,7 +45,7 @@ interpreted languages like Python, Ruby, and JavaScript, an interpreter executes
 
 - **Python**: Python's interpreter, often called CPython, is written in C and interprets Python code at runtime. It has a very rich standard library and supports dynamic typing and reflection.
     
-- **JavaScript**: JavaScript was initially only interpreted, primarily within web browsers. However, with the advent of Node.js and Just-In-Time (JIT) compilers like V8, it can also be considered a compiled language for certain use-cases.
+- **JavaScript**: JavaScript was initially only interpreted, primarily within web browsers. However, with the advent of [[Node.js]] and Just-In-Time (JIT) compilers like V8, it can also be considered a compiled language for certain use-cases.
     
 - **Ruby**: The Matz's Ruby Interpreter (MRI) is the reference interpreter for Ruby. Like Python, it offers dynamic typing and an extensive standard library.
     

@@ -9,7 +9,7 @@ Some servers like [[EC2]] are in a single machine
 
 ### Types of Servers
 
-1. **Web Server**: Hosts websites and delivers web pages to client [[browsers]] using [[HTTP]].
+1. **Web Server**: Hosts websites and delivers web pages to client [[web browser]] using [[HTTP]].
 2. **[[Database]] Server**: Provides database services, storing and retrieving data for other applications.
 3. **File Server**: Stores and manages files in a central location.
 4. **Mail Server**: Processes and stores emails.

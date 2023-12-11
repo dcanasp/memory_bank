@@ -6,7 +6,7 @@ mainly there are 3 types
 
 the ones i mainly know:
 
-- [[node]]
+- [[Node.js]]
 - [[typescript]]
 - [[python]]
 - [[java]]

@@ -25,3 +25,8 @@ The structure of B-trees ensures that data is stored and accessed in a way that 
 
 - The database uses a query optimizer to determine the most efficient way to execute a given query.
 - This process involves evaluating different query execution plans and selecting the one with the least estimated cost in terms of resources.
+
+
+They also have another distinction, **denormalized** vs **normalized** databases. Normalized databases are designed to minimize redundancy, while denormalized databases are designed to optimize read time.
+
+in normalized databases, you save the references as foreign keys, so there are no repeated data, but on denormalized databased, you would store the references as data, so it is faster

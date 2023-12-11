@@ -62,8 +62,8 @@ A cryptographic hash function is a mathematical algorithm that converts an input
 
 >[!important]
 >Most of the libraries include a random salt for each hash, argon2 and bcrypt for node do this, in this cases you don't need to store the salt on the database. for example on argon2 the hash:
->\$argon2id\$v=19\$m=65536,t=3,p=4\$Q77HkNUphNWymMjFywdqdg\$cxvoNJeliASdBufFQn/GDJ2qAFQz7/YPSMcNrqnqFr8 
->in between the \$\$ has the data as what algorithms is, the version, memory, paralelism, and the cicles. And after that, there is the salt, in this case Q77... is the salt of that hash
+>`$argon2id\$v=19\$m=65536,t=3,p=4\$Q77HkNUphNWymMjFywdqdg\$cxvoNJeliASdBufFQn/GDJ2qAFQz7/YPSMcNrqnqFr8 `
+>in between the `\$\$` has the data as what algorithms is, the version, memory, paralelism, and the cicles. And after that, there is the salt, in this case `Q77`... is the salt of that hash
 >
 ### code example
 

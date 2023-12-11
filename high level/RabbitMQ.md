@@ -10,7 +10,7 @@ It's important to understand that in it's core, RabbitMQ it's just a [[database]
 To create it it's better on [[docker]] (local on windows it's a pain because of erlang), and to connect you need a library that speaks amqp.
 
 
-code on node:
+code on [[Node.js]]:
 
 ```typescript
 const connection = await amqplib.connect(`amqp://${user}@${url}:5672`);

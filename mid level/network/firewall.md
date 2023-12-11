@@ -10,7 +10,7 @@ The firewall can block oncoming traffic (inbound rules) and outgoing traffic (ou
 
 1. **Packet-Filtering Firewalls**: The most basic form, which filters traffic based solely on source and destination [[IP]] addresses, [[port]] numbers, and [[protocols]].
 2. **Stateful Inspection Firewalls**: Keeps track of the state of active connections and makes decisions based on the context of the traffic.
-3. **Proxy Firewalls (Application-Level Gateways)**: Filters network traffic at the application level.
+3. **[[proxy]] Firewalls (Application-Level Gateways)**: Filters network traffic at the application level.
 4. **Next-Generation Firewalls (NGFW)**: Includes features like application awareness, deep packet inspection, intrusion prevention systems, and others.
 
 ### Implementation

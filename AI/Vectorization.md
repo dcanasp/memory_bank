@@ -1,0 +1,1 @@
+you take each word and 

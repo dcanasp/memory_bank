@@ -2,9 +2,19 @@
 - [x] setUp Ideas ✅ 2023-12-08
 - [x] architecture principles learnes ✅ 2023-12-08
 - [x] orm ✅ 2023-12-10
-- [ ] web server
-- [ ] fastify rabbit hole
-- [ ] how is it gonna work
+- [x] web server ✅ 2023-12-11
+- [x] fastify rabbit hole ✅ 2023-12-11
+- [x] how is it gonna work ✅ 2023-12-11
+- [x] user routes ALL Get ✅ 2023-12-14
+- [x] user routes ALL post ✅ 2023-12-14
+- [x] videos routes ✅ 2023-12-15
+- [ ] finish videos routes
+- [ ] microservices understanding
+- [ ] first microservice creation (sent on RTMP)
+- [x] RabbitMQ ✅ 2023-12-21
+- [x] S3 storage ✅ 2023-12-21
+- [ ] api gateway with nginx
+- [ ] side car thumbnail generator
 
 [[YtCl_requirements||Requirements]]
 [[YtCl_architecture||Architecture]]
@@ -12,4 +22,11 @@
 [[Proyects/YoutubeClone/YtCL_routes||Routes]] 
 
 
-I want to develop a youtube clone project to show on my resume and learn as much as i can let me remind you that i am a backend developer and that i have a vast knowledge on a lot of computer science thing, so you should NOT give me detailed steps for things like CRUD, REST api's, or creating a server on aws. Also something very important is that even though i most likely will have to create a front end, this will be the least important part, i want to create the backend server as good as i can (with good code practices, solid principles, and as escalable as posible) what i want from you is to help me map and creating a skeleton of what i must do to achieve this idea, give me a road map of all of the steps that this project would take, (to be clear all of the video processing, storing, serializing, serving, and all the related parts will be done by me on typescript, and will be stored on AWS services, also i know all of the principal databases)
+
+I'm an experienced backend developer with a strong foundation in computer science, currently pursuing a master's degree. I've decided to create a YouTube clone to enhance my portfolio and learn more about video processing and cloud services. I'm proficient in TypeScript and familiar with AWS services, and I intend to handle the video processing, storage, and serving components myself. The frontend will be minimal as my focus is on building a robust backend.
+
+My project will allow users to watch and publish videos. Videos will be stored on AWS S3. There will be one microservice, that processes and have a sidecar that creates a thumbnail. Metadata will be stored in a PostgreSQL database, while comments will be managed with a NoSQL database like MongoDB, with each video's comments stored as a collection.
+
+I plan to use a message queue for video processing tasks. The main server (on Typescript) uploads to a rabbitMQ broker, and a microservice (on Go) reads this broker, and manages the videos to not loose any data. Notifications will be handled via SMTP or AWS SES. I've expressed a preference for managing database migrations myself and I'm going to use Sequelize ORM, and raw queries when handling of complex queries.
+
+Your job is to help me and guide me on all of my problems, if you see any error you must tell me, even if it's architecture errors 

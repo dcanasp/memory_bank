@@ -23,3 +23,5 @@ but always take into account the [[Biggest risk]]
 saving all of the hashes
 
 # brute force
+
+# Eavesdropping

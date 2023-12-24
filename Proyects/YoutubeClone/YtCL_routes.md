@@ -44,6 +44,10 @@
 - **GET /videos/:id/comments:** Get all comments for a video.
 - **DELETE /videos/:id/comments/:commentId:** Delete a comment.
 
+**Analytics:**
+
+- **GET /videos/:id/analytics:** Get video analytics data (views, likes/dislikes, demographics, etc.)
+
 **Subscriptions:**
 
 - **POST /subscriptions/:channelId:** Subscribe to a channel.
@@ -54,7 +58,3 @@
 
 - **POST /notifications/send:** Send a notification to a user.
 - **GET /notifications/unread:** Get a list of unread notifications for the current user.
-
-**Analytics:**
-
-- **GET /videos/:id/analytics:** Get video analytics data (views, likes/dislikes, demographics, etc.)

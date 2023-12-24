@@ -44,7 +44,7 @@ which is better? [all mentioned vs each other](https://medium.com/deno-the-compl
 ###### Really usefull
 - **[[typescript]]**: read the article, the superset that should always be used
 - **PM2:** make a node application always available and turned on (creates a [[daemon]])
-- **Socket.io:** Enables real-time communication between clients and servers using [[web socket]].
+- **Socket.io:** Enables real-time communication between clients and servers using [[WebSocket]].
 - **Lodash:** Utility library with various functions for manipulating data.
 -  **Moment.js:** JavaScript library for working with dates and times.
 - **sharp:** To modify, resize and do anything with images

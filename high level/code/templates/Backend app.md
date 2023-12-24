@@ -73,3 +73,10 @@ export class UserRouter {
 
 }
 ```
+
+## fastify setup
+
+#todo 
+```typescript
+
+```

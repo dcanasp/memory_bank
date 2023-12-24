@@ -1,11 +1,11 @@
 ### Backend Server
 
-- **TypeScript on EC2**: main server 
+- **TypeScript on EC2**: main server build with fastify 
 ### Video Processing
 
 Both of this microservices will be using a queued system (kafka/rabbitMQ) 
 - **First microservice**: a service that will process the video in low quality
-	- **[[Racecar]]**: a separate service that will run along side this one, this service will create the thumbnails 
+	- **[[Sidecar]]**: a separate service that will run along side this one, this service will create the thumbnails 
 - **Second microservice**: a service that will process the video in high quality
 ### Video Storage
 

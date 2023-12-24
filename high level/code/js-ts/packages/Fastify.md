@@ -5,7 +5,7 @@ The core of Fastify is (speed) their **_plugins_**, **_decorators_** and **_hook
 
 Also, if you have a very specific problem, create your own *plugin*, that is your own code, that you register as a plugin, give it a *hook* (execute onSend, preParsing...), and now you have a way to solve any specific problem (eg. creating a [[mark of the web]] on each file that you return to the client). Finally and really important, you can create plugins that only apply to specific scopes, making your app as light as you want
 
-Another important part is their schemas, you don't have to, but doing them helps documenting, understanding and developing easer on larger teams, these are very similar to [[swagger]] schemas. Making it that you have **complete control** over your app
+Another important part is their schemas, you don't have to, but doing them helps with serialization and documenting. When you create a schema fastify will serialize and give your route a speed up of via a `factor of 2-3`. Also documenting makes understanding and developing easer on larger teams, these are very similar to [[swagger]] schemas. Making it that you have **complete control** over your app
 
 
 ## basics

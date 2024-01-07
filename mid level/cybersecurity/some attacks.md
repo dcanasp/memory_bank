@@ -1,27 +1,49 @@
-#todo 
-# harvest now decrypt later
+## DOS (Denial of Service)
 
-Even though [[RSA]] or [[AES]] cannot be broken now, this attack consists on saving all of this information and eventually it will be breakable, with [[post quantum cryptography]] or something like that
+Denial of service, overcharging a [[server]] or [[network]] with so many request that it cannot handle all of it and just shuts down
 
-# DOS
+## DDOS (Distributed Denial of Service)
 
-Denial of service, overcharging a [[server]] with so many request that it cannot handle all of it and just shuts down
+Similar to DOS, but the attack comes from many different sources, making it harder to stop. It could involve millions of devices, including those in the Internet of Things ([[IoT]]), making [[IP]] banning ineffective.
+
+## Man in the Middle (MitM)
+
+In this attack, the attacker secretly intercepts and possibly alters the communication between two parties who believe they are directly communicating with each other.
+
+## Spoofing
+
+Refers to the act of masquerading as a legitimate entity through falsification of data, thereby gaining an illegitimate advantage. It is often used in cyber-attacks to trick users and systems into divulging confidential information, granting access, or facilitating other forms of cyber fraud.
+
+It can be the basics like email spoofing, call spoofing. Or getting interesting with [[ip]] spoofing and [[DNS]] spoofing
+
+## Phishing
+
+A technique of **deceiving** individuals into providing sensitive data like passwords and credit card numbers by pretending to be a legitimate entity in digital communication.
+
+## Brute Force Attacks
+
+This attack method involves systematically checking all possible passwords or keys until the correct one is found. It is computationally intensive and time-consuming.
+
+## Dictionary Attacks
+
+This method involves using a prearranged list of [[hash]] and it's origin password. This means that even though the hash was never broken, as it is deterministic, you can know the original password. This is the biggest reason to use salt and pepper
 
 
-# DDOS
+## Eavesdropping
 
-Distributed [[some attacks|DOS]], now a lot of different [[computer|computers]] are attack you, banning [[ip]] is not enough what now? There can be millions, with [[IOT]] even your thermostat is a computer
+Passive attack where the attacker listens to private communication or [[network]] traffic. Can be used to gather information, passwords, or other sensitive data.
 
-# man in the middle
-# [[spoofing]]
+## [[SQL Injections]]
 
-# phishing
+ Attackers use SQL Injection to manipulate a standard SQL query in a database-driven website. They insert or inject a malicious SQL query via input data from the client to the application.
 
-but always take into account the [[Biggest risk]]
+## Cross-Site Scripting (XSS)
 
-# dictionary attacks
-saving all of the hashes
+An attacker injects malicious scripts into content from otherwise trusted websites. This script then executes in the context of the user's browser, potentially stealing data or impersonating the user.
+## harvest now decrypt later
 
-# brute force
+Even though [[RSA]] or [[AES]] cannot be broken now, This attack involves **collecting** encrypted data with the intention of decrypting it in the future, potentially with [[post quantum cryptography]] 
+## [[Biggest Risk]]
 
-# Eavesdropping
+>[!important]
+>  Always be aware that human error or social engineering can often be the biggest security risk.

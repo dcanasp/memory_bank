@@ -1,3 +1,4 @@
+#typescript #python
 A [[Message Broker]] that allows to create queues. these queues live (by default) on a database, you can make them work you call these queues via the protocol [[amqp]].
 
 They are really useful to maintain your data alive when the request are not sure to arrive and comeback instantly. There are two parts, the sender and receiver, each has it's unique code, but that is more amqp than RabbitMQ
@@ -70,3 +71,4 @@ channel.basic_consume(queue='rpc_queue', on_message_callback=on_request)
 print(" [x] Awaiting RPC requests")
 channel.start_consuming()
 ```
+

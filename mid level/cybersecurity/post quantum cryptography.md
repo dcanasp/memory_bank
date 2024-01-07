@@ -8,5 +8,5 @@ This works on every computer, even on normal [[von neumann architecture]]
 
 # hybrid rsa certificates
 
-right now, you can send a post quantum keys on your certificates, so even if the local authorities don't allow quantum safety, you can still do it
+right now, you can send a post quantum keys on your certificates, so even if the local authorities don't allow quantum safety, you can still do it and it will protect you from these attacks
 

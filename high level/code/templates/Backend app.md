@@ -74,9 +74,28 @@ export class UserRouter {
 }
 ```
 
-## fastify setup
+## fastify setup with JWT 
 
-#todo 
 ```typescript
-
+App.fastifyInstance = Fastify({ 
+	logger: false
+});
+//register plugins
+App.fastifyInstance.register(jwt, {
+	secret: jwt_secret,
+	sign: {
+		expiresIn: '72h'
+	}
+	
+});
+App.fastifyInstance.register(fastifyMultipart, {
+	attachFieldsToBody: true,
+  });	
+App.fastifyInstance.decorate("authenticate", async function(request, reply) {
+	try {
+	  await request.jwtVerify()
+	} catch (err) {
+	  reply.send(err)
+		}
+})
 ```

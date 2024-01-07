@@ -8,7 +8,7 @@ the ones i mainly know:
 
 - [[Node.js]]
 - [[typescript]]
-- [[go]]
+- [[Go]]
 - [[python]]
 - [[java]]
 - [[c#]]

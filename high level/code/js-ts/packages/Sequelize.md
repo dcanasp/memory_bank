@@ -1,3 +1,4 @@
+#typescript 
 :SiSequelize: An [[orm]] not as easy as prisma, with more control. Sequelize needs models to work (like every orm), but these models are more **strict**. is a traditional ORM which maps _tables_ to _model classes_. 
 
 If you want a reliable ORM this is better than [[Prisma]] . But on personal opinion, instead of sequelize i prefer raw [[sql]] with something like [[sqlx]] 
@@ -33,7 +34,7 @@ The default files use the library `path`,`process` and `fs` so (i never use the 
 
 
 
-After having your models. you must setup the database. You create the connection, and initialize the models
+After having your models. you must setup the database. You create the connection, and **initialize the models**
 ```
 Full example of configuration of sequelize on typescript
 ```

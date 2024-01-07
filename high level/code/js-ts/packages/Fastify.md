@@ -1,3 +1,4 @@
+#typescript
 ## why fastify?
 Fastify is a modern web Framework, it's the fastest web Framework, it's the most customisable with it's plugins. it's the best on the benchmarks. (unlike express.js that is the worst on all)
 

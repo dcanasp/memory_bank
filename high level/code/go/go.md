@@ -147,7 +147,7 @@ func main() {
 
 ### ### Using Standard Library
 - For production or if preferring not to use external packages, use environment variables directly.
-- Set them in your OS, through your deployment tool, or in your development environment.
+- Set them in your [[OS]], through your deployment tool, or in your development environment.
 - Access them in Go using `os.Getenv`
 - example:
 ```go
@@ -326,7 +326,7 @@ func InitDB() error {
 That's it. Now you can just query
 ```go
 db := myDB.DB
-rows, err := db.Query("SELECT * FROM users")
+rows, err := db.Query("SELECT * FROM users where ")
 ```
 That simple. But you get a binary mess in rows. To do something useful you have to **create** a **type** structure and **iterate** over **rows** (i like using methods for this)  
 ```go

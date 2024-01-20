@@ -1,6 +1,6 @@
 direction that identifies a [[computer]], or anything that has a internet access.
 
-There are two types of ip's Ipv4 and Ipv6. as of writing this, Ipv4 has reached it's maximum address number (4 billion <american billion> )
+There are two types of ip's Ipv4 and Ipv6. as of writing this, Ipv4 has reached it's maximum address number (4 billion american billion )
 
 A big problem with Ipv4 is that you normally only get one public IP per house, and it's on the router, your computer does NOT access the internet, it has a private Ip, that data is re routed to the router, and then it gets send, when sent the router keeps your MAC address to return the package to you
 

@@ -23,24 +23,24 @@
 # second server
 **Likes/Dislikes:**
 
-- [ ] **POST /likes/:id/like:** Like/dislike a video.
-- [ ] **GET /likes/:id/like:** Get the number of likes and dislikes for a video.
+- [x] **POST /likes/:id/like:** Like/dislike a video. ✅ 2024-01-07
+- [x] **GET /likes/:id/like:** Get the number of likes and dislikes for a video. ✅ 2024-01-07
 
 **Comments:**
 
-- [ ] **POST /comments/:id/comments:** Post a comment on a video.
-- [ ] **GET /comments/:id/comments:** Get all comments for a video.
-- [ ] **DELETE /comments/:id/comments/:commentId:** Delete a comment.
+- [x] **POST /comments/:id/comments:** Post a comment on a video. ✅ 2024-01-10
+- [x] **GET /comments/:id/comments:** Get all comments for a video. ✅ 2024-01-10
+- [x] **DELETE /comments/:id/comments/:commentId:** Delete a comment. ✅ 2024-01-10
 
 **Subscriptions:**
 
-- [ ] **POST /subscriptions/:channelId:** Subscribe to a channel.
-- [ ] **DELETE /subscriptions/:channelId:** Unsubscribe from a channel.
+- [x] **POST /:channelId:/subscribe** Subscribe to a channel. ✅ 2024-01-11
+- [x] **DELETE /:channelId:/subscribe** Unsubscribe from a channel. ✅ 2024-01-11
 - [ ] **GET /subscriptions/feed:** Get a feed of videos from subscribed channels.
 
 **Video Playback:**
 
-- [ ] **GET /videos/:id/stream:** Get a signed URL for streaming the video file in different formats and quality based on network conditions.
+- [ ] **GET /videos/stream/:id:** Get a signed URL for streaming the video file in different formats and quality based on network conditions.
 
 # main server once again
 **Search:**

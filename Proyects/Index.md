@@ -1,20 +1,11 @@
-This is a list of the most notable projects i've done and what i have learned with them.
-
+This is a list of the most notable projects I've done (full complete hosted on the cloud projects, not including any webscrapers or simple projects like that)
 ### hard
+[[YoutubeClone]]
 [[Trunews]]
-
-### medium
-
-Web scrapping for olx (not on github)
-
-### simple
-
+ Gestore (ecomerce site for selling computers)
 
 # Future projects / Ideas :
 
-#### [[YoutubeClone]]
-progress 
- 0%  
 #### myOwnDB
 progress 
  0%  

@@ -46,7 +46,7 @@ Commonly used with RESTful APIs, data is encoded as a JSON object.
 A simple encoding of data where the body is not parsed, sent as-is.
 
 ## Security Considerations
-
+HTTP is plainly not secure, everything is send on plain text, anyone could sniff your data, This is why [[HTTPS]] was created
 ## Integration with [[REST]]
 
 HTTP is often used as the basis for REST (Representational State Transfer), an architectural style for distributed hypermedia systems. RESTful APIs use HTTP requests to perform CRUD operations (Create, Read, Update, Delete) on resources, using the protocol's built-in methods.

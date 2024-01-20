@@ -1,4 +1,4 @@
-how do things comunicate throught a [[network]], they normally exchange a document, or some format (JSON file, HTTP header ...)  mainly 2 distinctions, syncronous and asyncronous, 
+how do things communicate through a [[network]], they normally exchange a document, or some format (JSON file, HTTP header ...)  mainly 2 distinctions, syncronous and asyncronous, 
 # based on synchrony 
 ### syncronous 
 Synchronous communication is a method where the sender **waits** for the receiver to process the message and return a response. This communication type is common in various application programming interfaces (APIs), particularly those using HTTP protocol.
@@ -21,7 +21,7 @@ In asynchronous communication, the sender does not wait for an immediate respons
 - **Resilience**: More robust against failures. If a server is down, it does not immediately disrupt the communication process.
 - **Efficiency**: Enhances overall system efficiency by eliminating the need for response waiting.
 
-# Additional Communication Methods
+# Some Communication Methods
 
 ####  [[WebSocket]]
 - **Persistent, Full-Duplex Communication**. Allows for real-time, two-way communication between client and server.
@@ -44,6 +44,9 @@ In asynchronous communication, the sender does not wait for an immediate respons
 #### MQTT (Message Queuing Telemetry Transport)
 - **Lightweight Messaging Protocol**. Designed for low-bandwidth, high-latency, or unreliable networks.
 - Extensively used in IoT for efficient device-to-device communication.
+### coAP (Constrained Application Protocol)
+- designed for resource-constrained devices and networks. 
+- It is a lightweight protocol similar to HTTP but optimized for constrained environments such as **IoT** (Internet of Things) devices.
 
 ### real life
 The world of server communication isn't limited to these two distinct modes. In reality, hybrid approaches often blend synchronous and asynchronous communication to achieve specific goals. For instance, a [[server]] might use synchronous calls with rest for critical transactions while leveraging AMQP queues for background processing and a server-sent event to respond when is done

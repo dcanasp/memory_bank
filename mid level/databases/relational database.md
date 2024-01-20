@@ -21,8 +21,6 @@ They are used for indexing, which speeds up data retrieval operations.
 
 The structure of B-trees ensures that data is stored and accessed in a way that minimizes disk reads, enhancing performance.
 
-
-
 - The database uses a query optimizer to determine the most efficient way to execute a given query.
 - This process involves evaluating different query execution plans and selecting the one with the least estimated cost in terms of resources.
 

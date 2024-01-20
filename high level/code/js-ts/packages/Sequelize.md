@@ -1,7 +1,7 @@
 #typescript 
 :SiSequelize: An [[orm]] not as easy as prisma, with more control. Sequelize needs models to work (like every orm), but these models are more **strict**. is a traditional ORM which maps _tables_ to _model classes_. 
 
-If you want a reliable ORM this is better than [[Prisma]] . But on personal opinion, instead of sequelize i prefer raw [[sql]] with something like [[sqlx]] 
+If you want a reliable ORM this is better than [[Prisma]] . But on personal opinion (currently i'm not sure on world)
 ### initial config
 
 ```shell

@@ -19,7 +19,7 @@ A buffer is a region of physical memory storage used to **temporarily** store da
 
 ## Buffer Management
 
-- Buffer management in [[os||operating systems]] and applications is crucial for optimal performance. It involves allocating buffer space, managing data flow, and ensuring efficient usage of resources.
+- Buffer management in [[OS||operating systems]] and applications is crucial for optimal performance. It involves allocating buffer space, managing data flow, and ensuring efficient usage of resources.
 
 ## Challenges
 

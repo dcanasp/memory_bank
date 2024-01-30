@@ -1,4 +1,4 @@
-Virtual private [[Network]], a way to connect to another [[computer|machine]] and do all of the traffic from their [[ip]], You connect to them and they do the heavy work. This is useful in 2 cases:
+Virtual private [[Network]], a way to connect to another [[computer|machine]] and do all of the traffic from their [[IP]], You connect to them and they do the heavy work. This is useful in 2 cases:
 
 - When you don't want your [[ISP]] or anyone on your network to spy on your online activity (via [[wireshark]])
 - When your enterprise wants only the computers on premise/allowed to have access to their databases and services. In other words, when you allow some computers to connect to your servers and databases, but only want those computers to have access and no one else

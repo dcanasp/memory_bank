@@ -16,7 +16,7 @@ In asynchronous communication, the sender does not wait for an immediate respons
 #### Key Characteristics
 - The sender sends a message and continues its process without waiting for a response.
 - Commonly uses protocols like [[AMQP]] and [[NATS]].
-- Typically implemented in conjunction with a [[message broker]]. The sender doesn't need to know the specific consumer; it sends messages to the broker, which then routes them appropriately.
+- Typically implemented in conjunction with a [[Message Broker]]. The sender doesn't need to know the specific consumer; it sends messages to the broker, which then routes them appropriately.
 #### Advantages
 - **Resilience**: More robust against failures. If a server is down, it does not immediately disrupt the communication process.
 - **Efficiency**: Enhances overall system efficiency by eliminating the need for response waiting.
@@ -33,7 +33,7 @@ In asynchronous communication, the sender does not wait for an immediate respons
 - Suitable for connecting microservices or backend services with clients.
 
 #### Server-Sent Events (SSE)
-- Creates a **Unidirectional Communication** from [[Server]] to client, real-time updates over HTTP.
+- Creates a **Unidirectional Communication** from [[server]] to client, real-time updates over HTTP.
 - Ideal for scenarios where clients require real-time updates from the server, like live notifications. But don't need to speak to the server at all
 
 #### Service Mesh

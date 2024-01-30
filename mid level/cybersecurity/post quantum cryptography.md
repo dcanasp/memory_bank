@@ -14,7 +14,7 @@ involves introducing noise in the matrix multiplication process, particularly in
 - The noise introduced during multiplication is not simply additive but multiplies with the matrix elements.
 - This process generates a new matrix that exhibits scaling properties conducive to quantum attacks.
 #### Applicability
-- The Gauss-Jordan attack with noise is not limited to quantum computers; it can be **executed** on **conventional computers**, even those using the [[von Neumann architecture]].
+- The Gauss-Jordan attack with noise is not limited to quantum computers; it can be **executed** on **conventional computers**, even those using the [[von neumann architecture]].
 ### Hybrid RSA Certificates
 
 To address the quantum threat, a strategy involves combining classical cryptographic algorithms with post-quantum cryptography. Hybrid RSA certificates are an example of this approach.

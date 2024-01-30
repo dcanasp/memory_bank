@@ -14,7 +14,7 @@ In this attack, the attacker secretly intercepts and possibly alters the communi
 
 Refers to the act of masquerading as a legitimate entity through falsification of data, thereby gaining an illegitimate advantage. It is often used in cyber-attacks to trick users and systems into divulging confidential information, granting access, or facilitating other forms of cyber fraud.
 
-It can be the basics like email spoofing, call spoofing. Or getting interesting with [[ip]] spoofing and [[DNS]] spoofing
+It can be the basics like email spoofing, call spoofing. Or getting interesting with [[IP]] spoofing and [[DNS]] spoofing
 
 ## Phishing
 

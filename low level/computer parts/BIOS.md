@@ -1,8 +1,8 @@
 ## BIOS (Basic Input/Output System)
 
-- BIOS is a firmware embedded on a chip on a computer's [[motherboard]]. It initializes and tests hardware components during the booting process and provides runtime services for operating systems and programs.
+- BIOS is a firmware embedded on a chip on a computer's [[Motherboard]]. It initializes and tests hardware components during the booting process and provides runtime services for operating systems and programs.
 - Acts as an interface between the computer's firmware and its operating system at the boot moment
-- It loads the [[os]] to ram 
+- It loads the [[OS]] to ram 
 
 - **Booting Process**:
     - **Power-On Self-Test (POST)**: Checks the hardware's functionality and compatibility.
@@ -31,5 +31,5 @@
 
 - UEFI is considered the successor to BIOS, addressing many of the older system's limitations.
 - Modern systems are **predominantly** equipped with **UEFI**, though some may still offer a legacy BIOS mode for compatibility with older systems.
-- You can **access** this **BIOS/UEFI** as in the software, in this window you can change what [[os]] to use, the drivers, and more. Normally to do that you hit one key when turning up the device (f1,f2,f12 depends on the computer, you can google `how to enter bios`) 
+- You can **access** this **BIOS/UEFI** as in the software, in this window you can change what [[OS]] to use, the drivers, and more. Normally to do that you hit one key when turning up the device (f1,f2,f12 depends on the computer, you can google `how to enter bios`) 
 ![[Bios.png]]

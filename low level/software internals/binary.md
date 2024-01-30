@@ -16,7 +16,7 @@ Operates on the principles of powers of two, where each binary digit (**bit**) r
 
 ## Storage and Operations
 
-- Binary data is stored in [[physical memory]] where bits are typically represented by different levels of electrical charge or magnetic polarity.
+- Binary data is stored in [[Physical memory]] where bits are typically represented by different levels of electrical charge or magnetic polarity.
 - Binary operations are performed using [[logical gates]].
 - **Combining** multiple binary sequences is a fundamental operation, especially in data processing and computing algorithms.
 

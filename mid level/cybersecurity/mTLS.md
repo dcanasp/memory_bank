@@ -77,7 +77,7 @@ openssl genpkey -algorithm RSA -out client-private-key.pem
 ```shell
 openssl req -new -key client-private-key.pem -out client.csr -subj "/CN=127.0.0.1" -addext "subjectAltName = IP:127.0.0.1"
 ```
-**IMPORTANT** once again, i have the CN as localhost, change it to your [[server]] [[ip]]
+**IMPORTANT** once again, i have the CN as localhost, change it to your [[server]] [[IP]]
 ### Sign the Certificates Using the CA
 #### Sign the Server's CSR to Create the Server Certificate
 ```shell

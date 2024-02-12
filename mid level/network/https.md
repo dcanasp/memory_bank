@@ -1,7 +1,7 @@
 HTTPS is an extension of [[HTTP]] and is used for secure communication over a computer [[network]] within a [[web browser]]. It incorporates an additional layer of encryption intended to enhance security of data as it travels across the network.
 ## Core Features of HTTPS
 ### Encryption
-HTTPS uses [[SSL]]/TLS protocols to encrypt the data exchange, making it secure from [[some attacks#Eavesdropping||eavesdropping]] and tampering. This encryption makes sure that any data transmitted is only understood by the intended recipient.
+HTTPS uses [[SSL]]/TLS [[protocols#Main Network Protocols||protocols]] to encrypt the data exchange, making it secure from [[some attacks#Eavesdropping||eavesdropping]] and tampering. This encryption makes sure that any data transmitted is only understood by the intended recipient.
 ### Integrity
 Data integrity is assured in HTTPS, meaning that the data cannot be modified or corrupted during transfer without detection.
 ### Authentication

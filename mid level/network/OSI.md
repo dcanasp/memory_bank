@@ -8,7 +8,7 @@
 - Session
 	Creating the channels for machines to talk to each other
 - Transport
-	Sending (and losing) the packages, TCP handshake
+	Sending (and losing) the packages, [[three way handshake]]
 - [[Network]]
 	Where you send your packages to a host
 - Data link

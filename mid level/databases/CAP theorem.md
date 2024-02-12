@@ -18,4 +18,4 @@ The theorem states that a distributed system can only provide two of these three
 
 - When designing distributed systems, architects must decide which two attributes are most critical for their system's needs and make trade-offs accordingly.
 - NoSQL databases often face these trade-offs, with different databases opting for different combinations of the CAP properties (e.g., Cassandra for AP, MongoDB for CP).
-- Understanding the CAP theorem helps in making informed decisions about the system architecture in terms of data handling, network setup, and overall reliability
+- Understanding the CAP theorem helps in making informed decisions about the [[system architecture]] in terms of data handling, network setup, and overall reliability

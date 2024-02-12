@@ -1,4 +1,5 @@
-HTTP is a foundational technology for the World Wide Web, enabling communication between clients (usually web browsers) and servers. It operates at the application layer of the [[OSI]] model and is characterized by its stateless protocol nature, though modern web applications often employ various methods to create a stateful session.
+HTTP is a foundational technology for the World Wide Web, enabling communication between clients (usually web browsers) and servers. It operates at the application layer of the [[OSI]] model and is characterized by its stateless [[protocols#Main Network Protocols||protocol]]
+nature, though modern web applications often employ various methods to create a stateful session.
 
 ## Core Features of HTTP
 

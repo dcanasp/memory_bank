@@ -7,7 +7,7 @@ There are two types of ip's. **Public** and **private**, public are the ones tha
 ## IPv4
 Ipv4 is the older version (still used in all of the world). It is represented on 32 bits. An example of an ipv4 is `127.0.0.1`. 
 
-As of writing this, Ipv4 has reached it's maximum address number (4 American billion). to combat this with Ipv4 is that you normally **only** get **one** public IP **per house**, and it's on the [[Router]], your computer does NOT access the internet, it has a private Ip, that data is re routed to the router, and then it gets send, when sent the router keeps your MAC address to return the package to you
+As of writing this, Ipv4 has reached it's maximum address number (4 American billion). to combat this with Ipv4 is that you normally **only** get **one** public IP **per house**, and it's on the [[Router]], your computer does NOT access the internet, it has a private Ip, that data is re routed to the router, and then it gets send, when sent the router keeps your [[MAC address]] to return the package to you
 
 The reserved IPs for IPv4 are
 - Class A: `10.0.0.0` to `10.255.255.255`

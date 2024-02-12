@@ -8,7 +8,7 @@ Video streaming has two similar but incredibly different use cases, live streami
 **Adaptive streaming** is a key feature of modern video streaming technology. It adjusts the stream's bitrate or quality dynamically during playback, based on the viewer's [[bandwidth]] and [[network]] conditions. This ensures an optimal viewing experience, minimizing buffering and playback interruptions.
 
 ## DASH (MPEG-DASH)
-Dynamic Adaptive Streaming over [[HTTP]]. **International standard** for streaming video and audio over the Internet, But excels at **video streaming** (on demand streaming). uses [[tcp]] and runs over http. It allows **adaptive streaming**. Segments packages and ensures **low latency**. It is also codec agnostic. Hence you can use any codec you want.
+Dynamic Adaptive Streaming over [[HTTP]]. **International standard** for streaming video and audio over the Internet, But excels at **video streaming** (on demand streaming). uses [[protocols#Main Network Protocols||TCP]] and runs over http. It allows **adaptive streaming**. Segments packages and ensures **low latency**. It is also codec agnostic. Hence you can use any codec you want.
 
 It's used on youtube and netflix
 ## HLS
@@ -19,7 +19,7 @@ Offers broad compatibility, especially with Apple devices. However, it tends to 
 is (mostly) the **only one** that works **on apple** (they created it with it's codecs in mind).
 
 ## RTMP
-Real Time Messaging Protocol. Primarily for **live streaming**. Known for its low latency even though it's older, widely used with the **flash** player. and runs over [[tcp]]. It has a lot of variants like
+Real Time Messaging Protocol. Primarily for **live streaming**. Known for its low latency even though it's older, widely used with the **flash** player. and runs over [[protocols#Main Network Protocols||TCP]]. It has a lot of variants like
 RTMPT (tunneled through HTTP), RTMPE (encrypted), RTMPTE (tunneled and encrypted), RTMFP (travels over UDP instead of TCP), RTMPS (encrypted over [[SSL]]). Known for it's **low latency** 
 
 ## WebRTC

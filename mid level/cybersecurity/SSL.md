@@ -1,7 +1,6 @@
 The name many times is used to refer to TSL, SSL is the older version and should NOT be used. 
 
-uses the [[hash]] SHA-256
-
+Uses the [[RSA]] algorithm for encryption 
 # theory
 ## How it works / [[ssl||TLS]] handshake
 2 parts. The **server**, that has the certificate, and the private key. And a **client**([[web browser]]) that wants to talk to that server. In the following process, they create a  session key, where the can talk in a encrypted channel with this session key 

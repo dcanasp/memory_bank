@@ -8,7 +8,7 @@ It allocates power and allows communication between the CPU, RAM, storage device
 - **[[RAM]] Slots**: Slots for Random Access Memory (RAM) modules.
 - **Chipset**: Manages data flow between the processor, memory, and peripherals.
 - **Expansion Slots**: PCIe slots for video cards, sound cards, and other expansion cards.
-- **[[Physical memory||Storage]] Connectors**: SATA ports for HDDs, SSDs, and optical drives.
+- **[[Physical memory|Storage]] Connectors**: SATA ports for HDDs, SSDs, and optical drives.
 - **I/O Ports**: USB, HDMI, Audio, and Ethernet ports for external device connections.
 - **[[BIOS]]/UEFI Firmware**: The one responsable to the booting process.
 

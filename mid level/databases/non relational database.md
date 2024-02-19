@@ -1,12 +1,12 @@
-also called NoSQL databases. There are many of them, and each has it's own desing priciples. if you want to know more about the types of NoSQL databases check [[database#types of databases||Types of databases]].
+also called NoSQL databases. There are many of them, and each has it's own desing priciples. if you want to know more about the types of NoSQL databases check [[database#types of databases|Types of databases]].
 
 But in summary the main types are 
-- [[database#key-value||key-value databases]]
-- [[database#wide column||wide column databases]]
-- [[database#document oriented (NoSQL)||document oriented databases]]
-- [[database#search engine||search engine databases]]
-- [[database#Graph||Graph databases]]
-- [[database#vector||Vector databases]]
+- [[database#key-value|key-value databases]]
+- [[database#wide column|wide column databases]]
+- [[database#document oriented (NoSQL)|document oriented databases]]
+- [[database#search engine|search engine databases]]
+- [[database#Graph|Graph databases]]
+- [[database#vector|Vector databases]]
 These DBs share some features (not all databases, take this note with a bit of **skepticism** and always remember the [[CAP theorem]]) 
 # Core Features
 
@@ -28,6 +28,6 @@ These DBs share some features (not all databases, take this note with a bit of *
 - **Scalability** out of the box
 # Considerations
 
-- Often do **not** enforce [[relational database#ACID||ACID]] properties strictly, so design with eventual consistency in mind.
+- Often do **not** enforce [[relational database#ACID|ACID]] properties strictly, so design with eventual consistency in mind.
 - You have to understand their querying mechanism to use them effectively, if not you don't gain anything 
 - Plan for data **distribution** and **sharding** strategies to ensure balanced load and efficient querying.

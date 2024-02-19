@@ -1,15 +1,28 @@
 # When to Implement Security Measures
 
-- Security should be a primary consideration from the **start** of **design** and **architecture**.
+- Security should be a primary consideration from the **start** of **design** and **architecture**. check the [[security]] Quality attribute
 - Any point where the **user interacts** with the application, especially during **login**, data **submission**, and data **retrieval**
 - Ensuring data is **securely transmitted** and **stored**, particularly sensitive data like personal information and credentials.
 - When you are using any type of [[Communication]] to other servers, even if the users don't see this 
 - Regularly update and patch the application, having logs and a fallback system
 # Must do's for web Security
+
+## Authentication and Authorization
+If none other do this, Any non public data should be accessible only after a authentication. Good methods are:
+- Passwords, 
+- one-time password, 
+- [[digital certificates]], 
+- two-factor authentication
+- biometric identification. 
+- Also include a CAPTCHA just in case
+
+If the user fails to many times. Lock them temporarily. 
+
+Great, your user has access, now the next part, he should only be able to access what is his. There should be **NO routes** that allow **data retrieval** **without Authorizing** the user. This prevents [[some attacks#Escalation of privilege|Escalation of privilege]]. In short **Never trust the users**.
 ## Storing Passwords
 When storing a password you never stored them on plaint text, you should use:
 - **Hashing**, Use cryptographic [[hash]] functions, ensuring passwords can't be easily deciphered if the hash is accessed.
-- **Salting**, Add a unique, random string to each password before hashing to prevent attacks [[some attacks#Dictionary Attacks||Dictionary Attacks]]
+- **Salting**, Add a unique, random string to each password before hashing to prevent attacks [[some attacks#Dictionary Attacks|Dictionary Attacks]]
 - **Peppering**, (optional). an additional layer of security by adding a secret value (pepper) to the hashing process
 
 ## User verification
@@ -33,8 +46,8 @@ A **third party** service that ensures a perfect authentication, They use multip
 
 ## [[HTTPS]]
 
-- **Encrypts** data transmitted between client and server, preventing [[some attacks#Man in the Middle (MitM)||Man in the middle]] attacks and [[some attacks#Eavesdropping||eavesdropping]].
-- Use [[SSL||TLS]] (Transport Layer Security) to secure all communications. Employ certificates from trusted Certificate Authorities (CAs).
+- **Encrypts** data transmitted between client and server, preventing [[some attacks#Man in the Middle (MitM)|Man in the middle]] attacks and [[some attacks#Eavesdropping|eavesdropping]].
+- Use [[SSL|TLS]] (Transport Layer Security) to secure all communications. Employ certificates from trusted Certificate Authorities (CAs).
 
 ## CORS
 
@@ -50,7 +63,7 @@ Most common to prevent [[sql injections]], use Prepared statements. But also pre
 
 ## rate limiting and CAPTCHA
 
-rate limiters stop [[some attacks#DOS (Denial of Service)||DOS]] attacks, one of the simplest to perform but lethal. You block the [[IP]]'s of the users that are making to many request at a given time. This is fairly simple unless you are using an [[ApiGateway]] or a [[Load balancer]] if so you have to use extra care when implementing this (as all the request will pass first to those entities)
+rate limiters stop [[some attacks#DOS (Denial of Service)|DOS]] attacks, one of the simplest to perform but lethal. You block the [[IP]]'s of the users that are making to many request at a given time. This is fairly simple unless you are using an [[ApiGateway]] or a [[Load balancer]] if so you have to use extra care when implementing this (as all the request will pass first to those entities)
 
 Captchas allows you to identify the humans from the bots, this is incredibly useful for preventing unwanted usage
 

@@ -8,8 +8,7 @@ This deployment pipeline has 3 main metrics of quality
 - Traceability: can you check all the steps on why an artifact had a problem? sometimes you store the data of all the system in a special [[database]] 
 - Repeatability: can you repeat the exact same pipeline multiple times?
 
-
-# tactics
+# Tactics
 
 ## Manage Deployment Pipeline
 
@@ -21,7 +20,7 @@ This deployment pipeline has 3 main metrics of quality
 
 - **Package dependencies**: when you deploy you add everything, packages, [[OS]], utility containers ([[Sidecar]], mesh). This is normally done through [[docker]] images
 - **Feature toggle**: Having a kill switch for possible unstable features. so you don't have to drop everything, only the unrequired features
-# patterns
+# Patterns
 
 [[microservices]] architecture Makes this increasingly easier.
 But when you want to change the application for all users you do a:

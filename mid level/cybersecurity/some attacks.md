@@ -40,9 +40,13 @@ Passive attack where the attacker listens to private communication or [[network]
 ## Cross-Site Scripting (XSS)
 
 An attacker injects malicious scripts into content from otherwise trusted websites. This script then executes in the context of the user's browser, potentially stealing data or impersonating the user.
+
+## Escalation of privilege
+
+Privilege escalation refers to a [[network]] attack aiming to gain **unauthorized** **higher**-level **access** within a security system. It typically starts with "good" user that has access to the application, then the attackers exploits vulnerabilities to access the full system with limited privileges.
 ## harvest now decrypt later
 
-Even though [[RSA]] or [[AES]] cannot be broken now, This attack involves **collecting** encrypted data with the intention of decrypting it in the future, potentially with [[post quantum cryptography]] 
+Even though [[RSA]] or AES cannot be broken now, This attack involves **collecting** encrypted data with the intention of decrypting it in the future, potentially with [[post quantum cryptography]] 
 ## [[Biggest Risk]]
 
 >[!important]

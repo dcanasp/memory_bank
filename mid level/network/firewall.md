@@ -30,3 +30,5 @@ The firewall can block oncoming traffic (inbound rules) and outgoing traffic (ou
 - **Access Control**: Regulates who can access the network and what they can see and do.
 - **[[VPN]] Support**: For secure remote access.
 - **Reporting and Logging**: Keeps detailed logs of network activity.
+
+

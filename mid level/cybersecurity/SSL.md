@@ -2,7 +2,7 @@ The name many times is used to refer to TSL, SSL is the older version and should
 
 Uses the [[RSA]] algorithm for encryption 
 # theory
-## How it works / [[ssl||TLS]] handshake
+## How it works / [[ssl|TLS]] handshake
 2 parts. The **server**, that has the certificate, and the private key. And a **client**([[web browser]]) that wants to talk to that server. In the following process, they create a  session key, where the can talk in a encrypted channel with this session key 
 
 1. **The 'client hello' message:** The client initiates the handshake by sending a "hello" message to the server. The message will include which TLS version the client supports, the cipher suites supported, and a string of random bytes known as the "**client random**."

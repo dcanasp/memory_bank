@@ -1,7 +1,7 @@
 #go
 ## why/use cases
 
-Created by Google, Go (also called Golang) is a statically typed, [[compiled languages||compiled language]]. It's designed for efficiency and ease of use, combining the performance of lower-level languages like C with the simplicity of higher-level languages.
+Created by Google, Go (also called Golang) is a statically typed, [[compiled languages|compiled language]]. It's designed for efficiency and ease of use, combining the performance of lower-level languages like C with the simplicity of higher-level languages.
 
 Ideal for building scalable and high-performance applications. Commonly used for cloud and **server-side applications**, **microservices**, and concurrent processing.
 

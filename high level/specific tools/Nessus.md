@@ -1,4 +1,4 @@
-a tool to create checks [[cryptography||cryptographic]] vulnerabilities from your services (urls).
+a tool to create checks [[cryptography|cryptographic]] vulnerabilities from your services (urls).
 
 First of all you download it (or use [[docker]])
 

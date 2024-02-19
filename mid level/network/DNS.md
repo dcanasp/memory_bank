@@ -24,7 +24,7 @@
 
 ### DNS in Security
 
-- **Vulnerabilities**: DNS is often a target for attacks like DNS [[some attacks#Spoofing||Spoofing]] or DNS Cache Poisoning.
+- **Vulnerabilities**: DNS is often a target for attacks like DNS [[some attacks#Spoofing|Spoofing]] or DNS Cache Poisoning.
 - **DNSSEC**: An extension to DNS, DNS Security Extensions (DNSSEC) adds a layer of security by validating responses with digital signatures.
 
 ### Importance

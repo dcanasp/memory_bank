@@ -42,7 +42,7 @@ examples
 # Requirements
 These are the Non-functional requirements (NFRs) or Quality attributes. Even though they are non functional they are as **important** as the functional ones. They are defined on the ISO/IEC 25010 
 
-A good mnemotechnic to remember this is *PASSME* ([[performance]], [[availability]], scalability, [[security]], maintainability, extensibility)
+A good mnemotechnic to remember this is *PASSME* ([[Performance]], [[Availability]], scalability, [[security]], maintainability, extensibility)
 
 in each article i explain this ones in detail, what they are, their patterns and tactics. But before that let's define some common ground.
 
@@ -59,13 +59,23 @@ These NFR have 6 parts
 | **Artifact** | a collection of systems, the whole system, or one or more pieces of the system | the code that runs |
 
 ## NFR
+Here are the most common NFR. (Most of) These have a note of their own, Please check it to see what they are, the tactics and patterns
+#todo scaling
 
 ## [[Availability]]
-## [[deployability]]
-## [[integrability]]
-## [[modifiability]]
-## [[performance]]
-## [[safety]]
+## [[Deployability]]
+## [[Integrability]]
+## [[Modifiability]]
+## [[Performance]]
+## safety
+A very important but sometimes overlook factor in system architecture is the safety of your code, specially when working with real world data. You have to be sure that you don't miss interpret important data from sensors, facial recognition tools or even AI, Doing so could harm or put in harm's way some unsuspecting user.
+
+This is a very specific problem, therefore if you face it, please research more about it.
+
+- Patterns:
+	- **Redundant sensors**: two sensors are one and one is none. Don't risk it
+	- **Monitor-actuator**: Before doing something, quantify the expected output (roughly). If it fails something might be wrong
+	- **Separated safety**: There are some parts that critical, have those audited as often as possible, the non critical can have their own server
 ## [[security]]
 ## [[testability]]
 ## [[usability]]

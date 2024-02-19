@@ -33,7 +33,7 @@ How do i set up my network. These are it's possible architectures, In this conte
 - **Hybrid**: Some times you need a special answer where you combine multiple standard topologies 
 # Network Protocols
 
-First of all let's remember the [[OSI]] model, That is a fundamental on how the network communicates. And also remember how an [[IP]] and [[Socket]] works. With that in mind also here is a list of the main [[protocols#Main Network Protocols||Protocols]]
+First of all let's remember the [[OSI]] model, That is a fundamental on how the network communicates. And also remember how an [[IP]] and [[Socket]] works. With that in mind also here is a list of the main [[protocols#Main Network Protocols|Protocols]]
 
 # Network Hardware
 

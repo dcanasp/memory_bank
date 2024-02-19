@@ -1,4 +1,4 @@
-Quantum computers represent a revolutionary paradigm in computing, leveraging the principles of quantum mechanics to perform calculations at **speeds** unimaginable with classical computers. Unlike classical computers that use [[binary#Units||bits]], quantum computers use quantum bits or **qubits**, allowing them to perform complex calculations simultaneously.
+Quantum computers represent a revolutionary paradigm in computing, leveraging the principles of quantum mechanics to perform calculations at **speeds** unimaginable with classical computers. Unlike classical computers that use [[binary#Units|bits]], quantum computers use quantum bits or **qubits**, allowing them to perform complex calculations simultaneously.
 
 ## Qubits vs. Bits
 

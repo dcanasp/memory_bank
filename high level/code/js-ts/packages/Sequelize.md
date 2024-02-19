@@ -1,5 +1,5 @@
 #typescript 
-:SiSequelize: An [[orm]] not as easy as prisma, with more control. Sequelize needs models to work (like every orm), but these models are more **strict**. is a traditional ORM which maps _tables_ to _model classes_. 
+An [[orm]] not as easy as prisma, with more control. Sequelize needs models to work (like every orm), but these models are more **strict**. is a traditional ORM which maps _tables_ to _model classes_. 
 
 If you want a reliable ORM this is better than [[Prisma]] . But on personal opinion (currently i'm not sure on world)
 ### initial config
@@ -30,9 +30,6 @@ The default files use the library `path`,`process` and `fs` so (i never use the 
 > **"DISCLAIMER"** this is somewhat insecure and the package is old, if you want total safety, create the tables by hand, and latter create the models by hand aswel!
 > A safe alternative is to use the cli
 > `npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string`
-
-
-
 
 After having your models. you must setup the database. You create the connection, and **initialize the models**
 ```

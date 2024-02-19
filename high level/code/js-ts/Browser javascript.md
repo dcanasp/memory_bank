@@ -1,4 +1,4 @@
-browser JavaScript is a programming language used to add interactivity and dynamic behavior to [[web pages]]. It is a lightweight, [[interpreted languages||interpreted language]] that runs directly within the [[web browser]], without the need for any additional software.
+browser JavaScript is a programming language used to add interactivity and dynamic behavior to [[web pages]]. It is a lightweight, [[interpreted languages|interpreted language]] that runs directly within the [[web browser]], without the need for any additional software.
 
 **Why is it important?**
 

@@ -4,7 +4,7 @@ how do things communicate through a [[network]], they normally exchange a docume
 Synchronous communication is a method where the sender **waits** for the receiver to process the message and return a response. This communication type is common in various application programming interfaces (APIs), particularly those using HTTP protocol.
 #### Key Characteristics
 - The sender blocks and waits for the receiver to process and respond.
-- Utilizes protocols like [[REST]], [[RPC#gRPC||gRPC]], and [[GraphQL]].
+- Utilizes protocols like [[REST]], [[RPC#gRPC|gRPC]], and [[GraphQL]].
 - Predominantly used in [[API]]s over [[HTTP]]. The sender must know the receiver's specific address or endpoint.
 #### Limitations
 
@@ -28,7 +28,7 @@ In asynchronous communication, the sender does not wait for an immediate respons
 - Ideal for applications requiring **continuous** data flow, like chat applications or live updates.
 - build over [[http]]
 
-#### [[RPC#gRPC||gRPC]] (Google Remote Procedure Call)
+#### [[RPC#gRPC|gRPC]] (Google Remote Procedure Call)
 - **Modern RPC Framework**, Utilizes HTTP/2, Protocol Buffers, and offers features like authentication and load balancing.
 - Suitable for connecting microservices or backend services with clients.
 

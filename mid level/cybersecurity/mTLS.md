@@ -1,4 +1,4 @@
-Mutual [[SSL||TLS]], also known as two-way [[SSL||TLS]], refers to a security protocol that ensures **bidirectional** authentication between two parties — typically a client and a server. It builds upon the standard TLS protocol by requiring both the server and the client to **authenticate each other** before any data is exchanged. This is particularly vital in **zero trust** environments where trust is never assumed and must be explicitly verified.
+Mutual [[SSL|TLS]], also known as two-way [[SSL|TLS]], refers to a security protocol that ensures **bidirectional** authentication between two parties — typically a client and a server. It builds upon the standard TLS protocol by requiring both the server and the client to **authenticate each other** before any data is exchanged. This is particularly vital in **zero trust** environments where trust is never assumed and must be explicitly verified.
 
 # theory
 
@@ -6,14 +6,14 @@ Mutual [[SSL||TLS]], also known as two-way [[SSL||TLS]], refers to a security pr
 
 ### The Handshake Process
 
-In mutual TLS, the handshake process involves a few more steps than the typical [[SSL||TLS]] handshake:
+In mutual TLS, the handshake process involves a few more steps than the typical [[SSL|TLS]] handshake:
 
 1. The client begins the handshake by sending a "***ClientHello***" message to the server.
 2. The server responds with a "***ServerHello***" message, along with its certificate and, optionally, a request for the client's certificate.
 3. The client **verifies** the server's certificate against a **list of trusted CAs**.
 4. If the server has requested client authentication, the client sends its certificate.
 5. The server verifies the client's certificate.
-6. Once mutual authentication is successful, symmetric encryption is established, and secure communication can begin. This is the same process that on [[SSL||TLS]] 
+6. Once mutual authentication is successful, symmetric encryption is established, and secure communication can begin. This is the same process that on [[SSL|TLS]] 
 ![[mTLS handshake.png]]
 
 ### Certificate Verification
@@ -32,7 +32,7 @@ In zero trust environments, trust is never implicit, and security is enforced by
 
 ### Data Protection
 
-mTLS ensures that the data transmitted is only between the authenticated parties, reducing the risk of [[some attacks#man in the middle||Man in the middle]] attacks.
+mTLS ensures that the data transmitted is only between the authenticated parties, reducing the risk of [[some attacks#man in the middle|Man in the middle]] attacks.
 ### Non-repudiation
 
 With mTLS, both parties in the communication are authenticated, so actions and transactions cannot be repudiated later.

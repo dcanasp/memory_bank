@@ -6,7 +6,7 @@ Kubernetes relies heavily on multiple machines and the auto scaling of this, for
 
 ## Why and when to use is
 
-When you absolutelly want high [[availability]]. And want the servers to autoscale, manage [[network]] and anything in beetween by themselfs
+When you absolutelly want high [[Availability]]. And want the servers to autoscale, manage [[network]] and anything in beetween by themselfs
 
 When you want to automate how my containers ([[docker]]) will scale, will get balanced and may other things. It's automating infrastructure 
 
@@ -64,7 +64,7 @@ You have a cluster with multiple nodes (worker nodes) and multiple master nodes.
 
 a namespace is a section inside of a **cluster**, like a virtual cluster. You should use them to keep the cluster clean, separating the stuff in a logical order (a namespace for db, one for the ingress...). Also do it when you want to reuse components, a **logging** component will be used multiple times in your application.
 
-Another good use case is to **limit access** and resources, for example you create a namespace that would delete all of the servers, data etc, you give access to that namespace **only** to the pod that actually should do it, so any other pod wouldn't be able to access the delete namespace, even if you are being attacked via a [[some attacks#Cross-Site Scripting (XSS)||injection or XSS attack]]. In the other case, you want your logger to only use x amount of [[RAM]] or [[Physical memory]], you give only that service a limit with a namespace
+Another good use case is to **limit access** and resources, for example you create a namespace that would delete all of the servers, data etc, you give access to that namespace **only** to the pod that actually should do it, so any other pod wouldn't be able to access the delete namespace, even if you are being attacked via a [[some attacks#Cross-Site Scripting (XSS)|injection or XSS attack]]. In the other case, you want your logger to only use x amount of [[RAM]] or [[Physical memory]], you give only that service a limit with a namespace
 
 there are some default ones
 
@@ -90,7 +90,7 @@ This ingress controller has to be downloaded separately, one it's nginx ingress 
 ## under the hood
 
 has multiple replica set's ready, so if it needs to switch them, or add them it's instantaneous the availability
-uses a **etcd**, [[database#key-value||Key-value]] database 
+uses a **etcd**, [[database#key-value|Key-value]] database 
 
 ## minikube / kind
 

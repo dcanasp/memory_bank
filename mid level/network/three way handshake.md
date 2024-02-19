@@ -1,4 +1,4 @@
-The TCP three-way handshake is a method used in the [[protocols||TCP/IP]] protocol to establish a **reliable connection** between a client and a server. Essential for initiating a communication session in a TCP/IP [[network]].
+The TCP three-way handshake is a method used in the [[protocols|TCP/IP]] protocol to establish a **reliable connection** between a client and a server. Essential for initiating a communication session in a TCP/IP [[network]].
 
 This process Verifies that both the sender and receiver are ready to communicate and that the receiver is able to receive data. And Establishes initial sequence numbers to be used during the session, ensuring ordered data transfer.
 

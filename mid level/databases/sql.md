@@ -28,7 +28,7 @@ SQL is a domain-specific language used in programming and designed for managing 
     
 6. **ACID Properties**: Ensuring Atomicity, Consistency, Isolation, and Durability in transactions is vital for the integrity of databases.
     
-7. **SQL in Distributed Databases**: Understanding how SQL is implemented in distributed databases, like sharding, replication, and CAP theorem considerations.
+7. **SQL in Distributed Databases**: Understanding how SQL is implemented in distributed databases, like sharding, replication, and [[CAP theorem]] considerations.
     
 
 it's important to note that each [[database manager]] have their SQL dialects and specific features/extensions. This is specially notable with oracle (and what ever they are doing over there)
@@ -69,7 +69,7 @@ VALUES (1, 'John Doe', 50000.00);
   
 ### `UPDATE` - Modifying Existing Data
 - **Updating Records:**
-    ```sql
+```sql
 UPDATE employees
 SET emp_salary = 55000.00
 WHERE emp_id = 1;

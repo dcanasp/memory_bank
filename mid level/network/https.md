@@ -1,4 +1,4 @@
-HTTPS is an extension of [[HTTP]] and is used for secure communication over a computer [[network]] within a [[web browser]]. It incorporates an additional layer of encryption intended to enhance security of data as it travels across the network.
+HTTPS is an extension of [[HTTP]] and is used for secure communication over a computer [[network]] within a [[web browser]]. It incorporates an additional layer of encryption intended to enhance security of data as it travels across the network. It's important to note that HTTPS **only encrypts** the **body** and **header** of request, The query params (URL) Is NOT encrypted
 ## Core Features of HTTPS
 ### Encryption
 HTTPS uses [[SSL]]/TLS [[protocols#Main Network Protocols|protocols]] to encrypt the data exchange, making it secure from [[some attacks#Eavesdropping|eavesdropping]] and tampering. This encryption makes sure that any data transmitted is only understood by the intended recipient.
@@ -16,6 +16,8 @@ this whole process is greatly detailed on the [[SSL|TLS]] note, please see it
 ## Defense Against [[some attacks|Common Attacks]]
 ### Man-in-the-Middle (MitM) Attacks
 By encrypting the data transferred between the client and server, HTTPS defends against MitM attacks, where a third party could potentially intercept and alter the communication.
+
+to verify HTTPS with web pages, you rely on your [[DNS]], the attacker any attacker **can't** create  
 ### Eavesdropping Attacks
 HTTPS encrypts the data being transmitted, which prevents unauthorized parties from reading the information as it travels through the network.
 ### Tampering

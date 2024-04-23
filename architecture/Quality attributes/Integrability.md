@@ -3,7 +3,7 @@ A core feature of [[system architecture]]. The problem is having a system *S* an
 # Tactics
 ## limit dependencies
 - **Encapsulate**: it's the most important part to develop an integrable system, It creates an explicit interface to an element and ensures that all access to the element passes through this interface.
-- **Intermediary**: Instead of talking directly, an intermediary steps in and makes communication between services, decoupling it. An example of an Intermediary is a  [[Message Broker]] In a pub/sub environment.
+- **Intermediary**: Instead of talking directly, an intermediary steps in and makes communication between services, decoupling it. An example of an Intermediary is a  [[Message Broker]] In a [[pub/sub]] environment.
 ## adapt
 - **Discover**: You should never call an external [[API]] or service with an static [[IP]]. Use a discover instead, It's a map where you find the services only with the name, this decouples your services. An example of this is a [[DNS]]
 - **Configure Behavior**: Don't marry with a configuration, the settings should be changeable with a simple restart with other flags
@@ -20,6 +20,6 @@ A core feature of [[system architecture]]. The problem is having a system *S* an
 ## Dynamic Discovery
 Enable the discovery of service providers at runtime. This way Even if you change components you don't have to restart everything
 ## SOA
-Service-Oriented Architecture Pattern
-The SOA pattern is related to the [[microservices]] architecture pattern. Microservices are assumed to compose a single system and be managed by a single organization, however, whereas SOAs provide reusable components that are assumed to be heterogeneous and managed by distinct organizations. 
+
+The Service-Oriented Architecture Pattern. When you have to many services and to many providers, in this pattern you have a service broker, This broker is like a phonebook. The services ask for a specific service, the broker says where is it, And then they talk to each other (the two services). In other words SOAs provide reusable components that are assumed to be heterogeneous and managed by distinct organizations. 
 

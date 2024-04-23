@@ -68,7 +68,7 @@ Here are the most common NFR. (Most of) These have a note of their own, Please c
 ## [[Modifiability]]
 ## [[Performance]]
 ## safety
-A very important but sometimes overlook factor in system architecture is the safety of your code, specially when working with real world data. You have to be sure that you don't miss interpret important data from sensors, facial recognition tools or even AI, Doing so could harm or put in harm's way some unsuspecting user.
+A very important but sometimes overlook factor in system architecture is the safety of your code, specially when working with real world data. You have to be sure that you don't miss interpret important data from sensors, facial recognition tools or even [[AI]], Doing so could harm or put in harm's way some unsuspecting user.
 
 This is a very specific problem, therefore if you face it, please research more about it.
 
@@ -77,5 +77,12 @@ This is a very specific problem, therefore if you face it, please research more 
 	- **Monitor-actuator**: Before doing something, quantify the expected output (roughly). If it fails something might be wrong
 	- **Separated safety**: There are some parts that critical, have those audited as often as possible, the non critical can have their own server
 ## [[security]]
-## [[testability]]
-## [[usability]]
+## usability
+>People ignore design that ignores people
+
+If the system is not easily usable is a system meant to fail, usability entails; easing the **learning** and **using** the system, **Minimizing** the impact of **users mistakes**, adapting to the users need and Increasing the user satisfaction and feedback, letting them know they are doing the correct things.
+
+Here is important to mention UI/UX. User experience is the main part of front end development, the application should be thought for the user.  
+
+### Patterns
+- **MVC**: model view controller it's an old pattern, but it separates the views and what the user uses, from the business logic, this makes the  system more usable

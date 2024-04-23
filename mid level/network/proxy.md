@@ -16,11 +16,13 @@ All the traffic you do, goes to the proxy, who actually makes the request
 All the traffic that is going to the server get's intercepted by the proxy, who then decides what to do with the flow
 
 - Acts on behalf of the server.
-- Hides the server's IP address from the client, enhancing security.
+- Hides the server's [[IP]] address from the client, enhancing security.
 - Can improve performance by [[Load balancer|load balancing]] requests across multiple servers.
 - Offers additional features like caching, compression, and [[SSL]] encryption.
 - That exact use case is really important, if you have a [[SSL]] certificate, you have to fetch it, a proxy manages that 
 - Web hosting companies, [[CDN|CDNs]].
+- Implementing special **[[security]] rules**, for example banning all request that come from X banned IPs, or all the request that have a [[sql injections]]  
+- Implementing a [[WAF]]
 
 ## how
 

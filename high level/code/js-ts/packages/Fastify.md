@@ -2,7 +2,7 @@
 ## why fastify?
 Fastify is a modern web Framework, it's the fastest web Framework, it's the most customisable with it's plugins. it's the best on the benchmarks. (unlike express.js that is the worst on all)
 
-The core of Fastify is (speed) their **_plugins_**, **_decorators_** and **_hooks_**. You can use their plugins, or you can create your own, some notable **plugins**, are `@fastify/mongodb`, that will help you create the whole connection to mongo fully integrated on fastify. You also have aut, jwt, postgrest, ratelimiters, websockets, or anything you can think of.
+The core of Fastify is (speed) their **_plugins_**, **_decorators_** and **_hooks_**. You can use their plugins, or you can create your own, some notable **plugins**, are `@fastify/mongodb`, that will help you create the whole connection to mongo fully integrated on fastify. You also have aut, [[JWT]], postgrest, ratelimiters, websockets, or anything you can think of.
 
 Also, if you have a very specific problem, create your own *plugin*, that is your own code, that you register as a plugin, give it a *hook* (execute onSend, preParsing...), and now you have a way to solve any specific problem (eg. creating a mark of the web on each file that you return to the client). Finally and really important, you can create plugins that only apply to specific scopes, making your app as light as you want
 

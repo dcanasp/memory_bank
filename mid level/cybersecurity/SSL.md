@@ -15,7 +15,7 @@ Uses the [[RSA]] algorithm for encryption
 8. **Server is ready:** The server sends a "finished" message encrypted with a session key.
 9. **Secure symmetric encryption achieved:** The handshake is completed, and communication continues using the session keys. A symmetric encryption
 
-![[tls handshake.png]]
+![[tlsHandshake.png]]
 
 
 # practice
@@ -33,6 +33,9 @@ cat private-key.pem signed-certificate.crt > key-pair.pem
 
 openssl x509 -signkey key-pair.pem -in certificate.csr -req -days 365 -out certificate.crt
 ```
+Finally you copy your certificate.crt and your key-pair.pem
+If you want to check
+`openssl x509 -text -noout -in certificate.crt`
 
 
 ## how to deliver

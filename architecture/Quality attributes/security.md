@@ -4,12 +4,12 @@ A core feature of [[system architecture]]. Security is granting access to the au
 - **Availability**: Your system should always be available, even when under [[some attacks|attacks]] 
 
 >[!important]
-If you want to see what to do to guaranty [[Web Security]] check that note.
+If you truly want security you should have [[Web Security]] and [[Network Security]].
 
 
-A very important fact about security is protecting the *cut vertices* (articulation points). These are the points in your system that if turned off would disconnect all of the services. For example a unique [[database]] or a [[load balancer]] if these fall down, the rest of the program is unable to operate. 
+A very important fact about security is protecting the *SPOF* (Single Point Of Failure) or in graph theory called *cut vertices* (articulation points). These are the points in your system that if turned off would disconnect all of the services. For example a unique [[database]] or a [[load balancer]] if these fall down, the rest of the program is unable to operate. 
 
-A final good security concept is two verify on **three** steps.
+A final good security concept is to verify on **three** steps.
 - With something you know (a password)
 - Something you are (Biometric)
 - Something you Have (USB with another private key)
@@ -24,6 +24,7 @@ First of all. Let's remember [[some attacks]] that are used today.
 - **Detect intrusion**: Comparing each movement a user (via their request) do to what a normal user should do. If a user is trying to access the [[database]] directly or contacting the main servers instead of the [[ApiGateway]] there is something wrong and that user should be banned.
 	Another important part in intrusion is checking [[IP]]s and connection times, when someone has a abnormal amount of connections, and then the system get's slow. Something happened
 - Verify **message integrity**: Whenever downloading any resources, files, or things like that you should be using a **checksum** or a [[hash]]. This makes impossible someone on the [[some attacks#Man in the Middle (MitM)|middle]] changing the files
+- Detect **message delay**: Your services normally should take an X amount of time, if it starts taking longer than usual it could be a possible attack
 
 ## Resist attacks
 - **Authentication**: Anything valuable should be accessed after a Password, one-time password, [[digital certificates]], two-factor authentication, or biometric identification. Also include a CAPTCHA just in case
@@ -37,6 +38,7 @@ First of all. Let's remember [[some attacks]] that are used today.
 - **Inform actors**: If you are under attack make it a immediate problem, talk to your team, every second counts
 ## React to attacks
 - **Audit**: after an attack verify there are no bad actors inside of system
+- **non repudiation**: Every transaction should have the traceability of who made it. If some bad actor access the system (most times are employees) we should know who they were 
 # Patterns
 
 ## Intercepting Validator

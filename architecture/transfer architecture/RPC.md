@@ -1,5 +1,5 @@
 #typescript
-is a protocol that one program can use to **request** a **service** from **another program** located on another computer in a network. RPC abstracts the networking aspect, making the [[network]] communication process appear as a simple function call.
+is a protocol that one program can use to **request** a **service** from **another program** located on another computer in a network. RPC abstracts the networking aspect, making the [[network]] communication process and [[http]] appear as a simple function call.
 
 - In RPC, calling a function on a remote server **feels like** calling a **local function**. The complexity of the network communication is hidden from the developer.
 
@@ -18,8 +18,10 @@ mainly with 2 stubs, a client and a server stub. That make the process seamless.
 # gRPC
 ## Theory
 ### Basics
-gRPC is an open-source remote procedure call (RPC) system initially developed by Google. It uses Protocol Buffers (protobuf) as its interface definition language to define the service methods and their message types.
-I find very important to note, that to date. gRPC is **NOT SUPPORTED** on [[web browser]]
+gRPC is an open-source remote procedure call (RPC) system initially developed by Google. It uses Protocol Buffers (protobuf) as its interface definition language to define the service methods and their message types. gRPC works on top of [[HTTP]]/2
+
+>[!important]
+To this date. gRPC is **NOT SUPPORTED** on [[web browser]]. If you really want it you have to create a [[proxy]]
 
 - **Protocol Buffers**: A language-neutral, platform-neutral, extensible way of serializing structured data.
 - Uses `.proto` files to define service methods and their request and response message types.
@@ -28,8 +30,8 @@ I find very important to note, that to date. gRPC is **NOT SUPPORTED** on [[web 
 ### gRPC vs REST
 
 #### Protocol
-- **gRPC** Uses HTTP/2 which allows for features like streaming, multiplexing, and smaller message sizes.
-- **REST** Typically uses HTTP/1.1. Does not inherently support streaming and often uses JSON for message format, which can be larger.
+- **gRPC** Uses [HTTP]/2 which allows for features like streaming, multiplexing, and smaller message sizes.
+- **REST** Typically uses [[HTTP]]/1.1. Does not inherently support streaming and often uses JSON for message format, which can be larger.
 #### Communication Model
 - **gRPC** Supports Unary (single request/response), server **streaming**, client streaming, and bi-directional streaming.
 - **REST** Primarily based on request/response model. Streaming has to be implemented separately.

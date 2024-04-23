@@ -27,8 +27,8 @@ When storing a password you never stored them on plaint text, you should use:
 
 ## User verification
 
-### JWT (JSON Web Tokens)
-A token that stores a payload, can be seen by anyone, but it's signed as only you can issue a **valid token** with your JWT **secret**
+### [[JWT]] (JSON Web Tokens)
+A token that stores a payload, can be seen by anyone, but it's signed as only you can issue a **valid token** with your [[JWT]] **secret**
 - Ideal for **stateless** authentication in systems.
 - JWTs are compact, URL-safe tokens that contain a JSON payload with user identity claims. They are digitally signed for integrity and optionally encrypted.
 - Implement robust signature verification, manage **token expiration** effectively, if possible create **2 tokens**, and access one and a refresh one, and secure token storage on the client side.
@@ -48,6 +48,7 @@ A **third party** service that ensures a perfect authentication, They use multip
 
 - **Encrypts** data transmitted between client and server, preventing [[some attacks#Man in the Middle (MitM)|Man in the middle]] attacks and [[some attacks#Eavesdropping|eavesdropping]].
 - Use [[SSL|TLS]] (Transport Layer Security) to secure all communications. Employ certificates from trusted Certificate Authorities (CAs).
+- Take into account that https only encrypts the body and the header of the request. Not the url, not the query params
 
 ## CORS
 

@@ -1,6 +1,6 @@
 # Theory
 ## What is it?
-A container orchester. Not container creation, it should never be compared with [[docker]], nor docker-compose. It's real alternative is docker swarm (already deprecated), a smaller and less capable tool, swarm does not include autoscailng, monitoring etc...
+A container orchester. Not container creation, it should never be compared with [[docker]], nor docker-compose. It's real alternative is docker swarm, a smaller and less capable tool, swarm does not include autoscailng, monitoring etc...
 
 Kubernetes relies heavily on multiple machines and the auto scaling of this, for this reasons it needs a cloud provider to use it effectively, if you want only local stuff use minikube
 
@@ -277,7 +277,7 @@ the host has to be a valid domain name, and it has to be the address to your kub
 
 finally here on ingress you put the [[SSL]] certificates
 ## minikube 
-A tool to create a setup for kubernetes **Locally**, (setting up on virtualBox is harder. Use `minikube start --driver=docker`). To install follow the guide [minikube install](https://minikube.sigs.k8s.io/docs/start/)
+A tool to create a setup for kubernetes **Locally**, (setting up on virtualBox is harder. Use `minikube start --driver=docker`). To install follow the guide [minikube install](https://minikube.sigs.k8s.io/docs/start/). Don't forget to start the docker minikube container
 
 ### commands
 - `minikube start --driver=docker` To *start* a cluster

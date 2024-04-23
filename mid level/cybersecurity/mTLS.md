@@ -14,7 +14,7 @@ In mutual TLS, the handshake process involves a few more steps than the typical 
 4. If the server has requested client authentication, the client sends its certificate.
 5. The server verifies the client's certificate.
 6. Once mutual authentication is successful, symmetric encryption is established, and secure communication can begin. This is the same process that on [[SSL|TLS]] 
-![[mTLS handshake.png]]
+![[mTLS_handshake.png]]
 
 ### Certificate Verification
 
@@ -101,7 +101,7 @@ cat client-private-key.pem client-certificate.crt > client-key-pair.pem
 now you are done, transfer the files to your machine
 These are the final files
 
-![[mTLS files.png]]
+![[mTLS_files.png]]
 
 ## files to transfer
 To your **Server**:

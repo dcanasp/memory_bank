@@ -4,7 +4,7 @@ Thrives in scenarios where immediate feedback is not crucial, like sending notif
 ### Key Concepts
 
 - **Message Queuing**: Enables asynchronous communication between different parts of a system, where messages are stored in a queue until they can be processed.
-- **Publish-Subscribe Model**: In this model, messages are published to a specific class or topic, and subscribers to that class or topic receive the messages.
+- **Publish-Subscribe ([[pub/sub]]) Model**: In this model, messages are published to a specific class or topic, and subscribers to that class or topic receive the messages.
 - **Routing**: The process by which the message broker decides how and where to send messages based on specific rules and logic.
 
 ### Types of Message Brokers
@@ -16,6 +16,6 @@ Thrives in scenarios where immediate feedback is not crucial, like sending notif
 ### Popular Message Broker Technologies
 
 - **[[RabbitMQ]]**: Open-source message broker that uses the Advanced Message Queuing Protocol ([[AMQP]]). Known for its reliability, flexibility, and support for multiple messaging protocols.
-- **Apache Kafka**: A distributed streaming platform that goes beyond traditional pub/sub models to allow replaying of messages. It excels in high-throughput use cases like event streaming.
-- **AWS SNS/SQS**: Amazon Simple Notification Service (SNS) is a pub/sub service, while Amazon Simple Queue Service (SQS) is a message queuing service. They provide scalability and flexibility for cloud-based applications.
+- **Apache Kafka**: A distributed streaming platform that goes beyond traditional [[pub/sub]] models to allow replaying of messages. It excels in high-throughput use cases like event streaming.
+- **AWS SNS/SQS**: Amazon Simple Notification Service (SNS) is a [[pub/sub]] service, while Amazon Simple Queue Service (SQS) is a message queuing service. They provide scalability and flexibility for cloud-based applications.
 - **Others**: ActiveMQ and ZeroMQ are other notable examples, each with unique features suitable for different scenarios.

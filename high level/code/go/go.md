@@ -90,7 +90,7 @@ import (
  "log" //for logging
  "os" //for any low level, including opening files and env
  "database/sql" //go own orm
- "net/http" //web services (use gorilla mux with it)
+ "net/http" //web services
  "strconv" //parse, format, convert
  "strings" //any logic with strings, suffix, contains...
  "encoding/json" //want to use json?
@@ -99,11 +99,7 @@ import (
  "bytes" //convert to buffers
  "reflect" // some metadata that the code stores (like to see datatypes)
  "sync" //any mutex, parallelism
-
-
-"github.com/gorilla/mux" //a better server than net/http
 _ "github.com/lib/pq" //your database driver
-"google.golang.org/grpc" //grpc server
 )
 ```
 
@@ -145,7 +141,7 @@ func main() {
 }
 ```
 
-### ### Using Standard Library
+### Using Standard Library
 - For production or if preferring not to use external packages, use environment variables directly.
 - Set them in your [[OS]], through your deployment tool, or in your development environment.
 - Access them in Go using `os.Getenv`
@@ -286,8 +282,7 @@ displayName := user.DisplayName()
 ### interfaces
 You can also create interfaces. An _interface type_ is defined as a set of method signatures. Take into account that. A type implements an interface by implementing its methods. There is **no explicit declaration** of intent, no "implements" keyword.
 
-
-
+#todo 
 ## pointers
 
 In short. `&test` is a **pointer**, it points to the location of test, meanwhile `*test` is the **value of a pointer** OR the reference for a **pointer in a function**. So for example
@@ -299,6 +294,22 @@ This function expects the memory direction of a `sql.Rows` object. Meanwhile `re
 
 The most important thing is that when printed, pointer objects look ugly. But the can have order. For example
 i have this pointer of type User `p *User` if i try to print it i get `{33 prueba4 fake4@ { true} { true}}` But if the type has public elements i can do `p.Id` and it will give me only `33`. There is **order** **inside** of the **element**
+## structures
+They are very simple but essential for [[Go#Methods (classes)||methods]]
+```go
+type DynamoEntry struct {
+	FilePath string `json:"newName"`
+	BrokerEntry
+	Date int64
+}
+```
+in this example i have a struct with the 3 different element types, one as a string that has an *annotation* for any json parser, if it is parsed on json the element will be called *newName*, another one is another struct, and does NOT have a name, so all of its data will be on the same level as the other params. And finally normal int element 
+## Init()
+Whenever you want some functions to run before the main func. The image shows a very descriptive execution order (from farthest to close)
+![[initOrderGolang.png]]
+## Go routines
+
+this file is long enough, check [[advance go]]
 ## database conection
 You can use an [[orm]] if you really want but the standard library is more than enough in most cases
 

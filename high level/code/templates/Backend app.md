@@ -74,7 +74,7 @@ export class UserRouter {
 }
 ```
 
-## fastify setup with JWT 
+## fastify setup with [[JWT]] 
 
 ```typescript
 App.fastifyInstance = Fastify({ 

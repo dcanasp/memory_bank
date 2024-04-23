@@ -116,11 +116,11 @@ Databases that structure their data as nodes, and it's relations as the edges of
 - **never a primary database**
 
 ## vector
-For storing previous machine learning inputs and their embeddings, These are very niche for **AI** cases where you need to store the state of any deep learning or LLM program. You can save this on normal DBs and there are some implementations like pgvector for postgresql
+For storing previous machine learning inputs and their embeddings, These are very niche for **[[AI]]** cases where you need to store the state of any deep learning or LLM program. You can save this on normal DBs and there are some implementations like pgvector for postgresql
 
 > [!example]
 > There are multiple contenders but currently no one has been decided as the best
 
 ### when?
-- When creating a Very big **ai** project where saving the state is necessary
+- When creating a Very big **AI** project where saving the state is necessary
 - **never a primary database**

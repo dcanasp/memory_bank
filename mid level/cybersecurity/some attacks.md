@@ -47,7 +47,9 @@ Privilege escalation refers to a [[network]] attack aiming to gain **unauthoriz
 ## harvest now decrypt later
 
 Even though [[RSA]] or AES cannot be broken now, This attack involves **collecting** encrypted data with the intention of decrypting it in the future, potentially with [[post quantum cryptography]] 
-## [[Biggest Risk]]
+## Biggest Risk
+
+The **final user** will always be the biggest risk, they will store the passwords in plain text and send them in unsecure ways, Send their credit card to any one who asks. This is the basics of the social engineering
 
 >[!important]
->  Always be aware that human error or social engineering can often be the biggest security risk.
+>  Make it **as hard** for them **to mess up** as possible

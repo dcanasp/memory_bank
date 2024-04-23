@@ -25,7 +25,7 @@ This deployment pipeline has 3 main metrics of quality
 [[microservices]] architecture Makes this increasingly easier.
 But when you want to change the application for all users you do a:
 - **Blue/green deployment**: you create two separate, but *identical* environments. One environment (blue) is running the current application version and one environment (green) is running the new application version. If the **green works** then you make those the current blue applications and delete the old blue 
-- **Rolling upgrade**: also called rolling update. You start updating some of the servers/pods one at a time (in [[kubernetes]] for example). And until they finish updating you swap them, creating a zero downtime deployment
+- **Rolling upgrade**: also called rolling update. You start updating some of the servers/pods one at a time (in [[Kubernetes]] for example). And until they finish updating you swap them, creating a zero downtime deployment
 
 And if you just want to change for a few users, like for testing they like the new interface. You do a:
 - **Canary Testing**: When you want to test on a specific set of users (specific demography). You select them as canaries to try the new features. They are routed to the appropriate version of a service through [[DNS]] settings or through discovery-service configuration

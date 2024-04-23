@@ -9,7 +9,7 @@
 
 ### Key Components
 
-- **Domain Name**: A human-readable address (e.g., `www.example.com`).
+- **Domain Name**: A human-readable address (e.g., `www.example.com`). This name follows the RFC 952 standard. No underscores nor special characters
 - **IP Address**: A unique numerical label assigned to each device connected to a computer network.
 - **DNS Server**: A server that contains a database of public IP addresses and their associated hostnames.
 - **Resolver**: Part of the browser that queries DNS servers.
@@ -38,3 +38,13 @@
     - A user enters `www.example.com` into their browser.
     - The browser sends a DNS query, which is resolved to an [[IP]] address like `192.0.2.1`.
     - The browser connects to this IP address to retrieve and display the website.
+
+### Common errors
+#### RFC 952
+
+This one is very simple but hard to debug. Your DNS name must follow this regex pattern:
+`ValidHostnameRegex = "^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\-]*[A-Za-z0-9])$";`
+
+These are the rules visualized.
+![[DNS_Regex.png]]
+Mainly. Only letters, numbers and "-" allowed. underscores are not allowed. This is specially important in [[docker]] whenever you create your own [[network]] and DNS names

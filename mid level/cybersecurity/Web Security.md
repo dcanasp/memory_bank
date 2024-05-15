@@ -1,6 +1,6 @@
 # When to Implement Security Measures
 
-- Security should be a primary consideration from the **start** of **design** and **architecture**. check the [[security]] Quality attribute
+- Security should be a primary consideration from the **start** of **design** and **architecture**. check the [[architecture/Quality attributes/security]] Quality attribute
 - Any point where the **user interacts** with the application, especially during **login**, data **submission**, and data **retrieval**
 - Ensuring data is **securely transmitted** and **stored**, particularly sensitive data like personal information and credentials.
 - When you are using any type of [[Communication]] to other servers, even if the users don't see this 
@@ -52,7 +52,7 @@ A **third party** service that ensures a perfect authentication, They use multip
 
 ## CORS
 
-When your server doesn't need to be public, **DON'T** make it **public**, you can authorize only some [[IP]]'s to access it. This Specially applies to the [[database]], They should **NEVER** be public, only the [[server]] [[IP]] should access it  
+When your server doesn't need to be public, **DON'T** make it **public**, you can authorize only some [[IP]]'s to access it. This Specially applies to the [[mid level/databases/Database]], They should **NEVER** be public, only the [[server]] [[IP]] should access it  
 # recommended  
 
 ## logging

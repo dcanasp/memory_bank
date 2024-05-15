@@ -2,7 +2,7 @@ A MAC (Media Access Control) address is a unique identifier assigned to [[networ
 
 MAC addresses six octets in hexadecimal separated by colons or hyphens (`00:1A:2B:3C:4D:5E`).
 
-MAC addresses are typically assigned by the manufacturer of a network interface controller and are stored in its hardware, such as the card's read-only memory or some other firmware mechanism. Take into account that in [[docker||containerization]] [[podman||]] [[Kubernetes||]] you define the MAC
+MAC addresses are typically assigned by the manufacturer of a network interface controller and are stored in its hardware, such as the card's read-only memory or some other firmware mechanism. Take into account that in [[docker|containerization]] [[podman|]] [[Kubernetes|]] you define the MAC
 
 During data transmission over a network, the MAC address is used to ensure that the data reaches the correct destination on a local network segment.
 

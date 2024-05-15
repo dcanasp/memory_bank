@@ -1,5 +1,5 @@
 A core feature of [[system architecture]]. Being able to carry the task you need whenever you need them. It's the concepts of **reliability** and **recovery**. 
-This is closely related to [[security]] and [[Performance]]
+This is closely related to [[architecture/Quality attributes/security]] and [[Performance]]
 
 the availability can be calculated with the equation
 $A=\frac{M T B F}{MTBF+M T T R}$    Where 

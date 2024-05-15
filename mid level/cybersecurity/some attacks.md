@@ -4,7 +4,7 @@ Denial of service, overcharging a [[server]] or [[network]] with so many request
 
 ## DDOS (Distributed Denial of Service)
 
-Similar to DOS, but the attack comes from many different sources, making it harder to stop. It could involve millions of devices, including those in the Internet of Things ([[IoT]]), making [[IP]] banning ineffective.
+Similar to DOS, but the attack comes from many different sources, making it harder to stop. It could involve millions of devices, including those in the Internet of Things ([[IoT]]), making [[IP]] banning ineffective. There are multiple levels of DDoS depending on what [[OSI]] layer they attack. 
 
 ## Man in the Middle (MitM)
 

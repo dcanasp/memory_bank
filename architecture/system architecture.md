@@ -42,7 +42,7 @@ examples
 # Requirements
 These are the Non-functional requirements (NFRs) or Quality attributes. Even though they are non functional they are as **important** as the functional ones. They are defined on the ISO/IEC 25010 
 
-A good mnemotechnic to remember this is *PASSME* ([[Performance]], [[Availability]], scalability, [[security]], maintainability, extensibility)
+A good mnemotechnic to remember this is *PASSME* ([[Performance]], [[Availability]], scalability, [[architecture/Quality attributes/security]], maintainability, extensibility)
 
 in each article i explain this ones in detail, what they are, their patterns and tactics. But before that let's define some common ground.
 
@@ -76,7 +76,7 @@ This is a very specific problem, therefore if you face it, please research more 
 	- **Redundant sensors**: two sensors are one and one is none. Don't risk it
 	- **Monitor-actuator**: Before doing something, quantify the expected output (roughly). If it fails something might be wrong
 	- **Separated safety**: There are some parts that critical, have those audited as often as possible, the non critical can have their own server
-## [[security]]
+## [[architecture/Quality attributes/security]]
 ## usability
 >People ignore design that ignores people
 

@@ -1,4 +1,6 @@
 #todo 
+# Go routines
+they work on green threads
 # profiler
 A profiler is 
 there are two main profilers
@@ -38,3 +40,13 @@ inside of any of those you can do a *top* to see the usage of each of those cate
 
 or the heap usage 
 ![[goProfillerHeap.png]]
+
+# building other OS
+```shell
+GOOS=wasip1 GOARCH=wasm go build -o main.wasm main.go
+```
+`GOOS` - Target Operating System
+`GOARCH` - Target Platform
+# Build tags
+https://assets.digitalocean.com/books/how-to-code-in-go.pdf
+`go build -tags pro`

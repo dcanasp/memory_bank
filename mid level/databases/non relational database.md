@@ -1,12 +1,12 @@
-also called NoSQL databases. There are many of them, and each has it's own desing priciples. if you want to know more about the types of NoSQL databases check [[database#types of databases|Types of databases]].
+also called NoSQL databases. There are many of them, and each has it's own desing priciples. if you want to know more about the types of NoSQL databases check [[mid level/databases/Database#types of databases|Types of databases]].
 
 But in summary the main types are 
-- [[database#key-value|key-value databases]]
-- [[database#wide column|wide column databases]]
-- [[database#document oriented (NoSQL)|document oriented databases]]
-- [[database#search engine|search engine databases]]
-- [[database#Graph|Graph databases]]
-- [[database#vector|Vector databases]]
+- [[mid level/databases/Database#key-value|key-value databases]]
+- [[mid level/databases/Database#wide column|wide column databases]]
+- [[mid level/databases/Database#document oriented (NoSQL)|document oriented databases]]
+- [[mid level/databases/Database#search engine|search engine databases]]
+- [[mid level/databases/Database#Graph|Graph databases]]
+- [[mid level/databases/Database#vector|Vector databases]]
 These DBs share some features (not all databases, take this note with a bit of **skepticism** and always remember the [[CAP theorem]]) 
 # Core Features
 

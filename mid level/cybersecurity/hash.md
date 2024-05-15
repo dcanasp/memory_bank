@@ -32,7 +32,7 @@ A cryptographic hash function is a mathematical algorithm that converts an input
 
 1. A salt is a random value that is added to the input of a hash function to create a unique hash.
 2. The primary purpose of a salt is to defend against [[some attacks|dictionary attacks]] or attacks using pre-computed hash tables, like rainbow tables.
-3. Should be unique for each password, so it should be stored on the [[database]]
+3. Should be unique for each password, so it should be stored on the [[mid level/databases/Database]]
 4. **Usage**:
     - When a password is stored, a new, random salt is generated and concatenated with the password.
     - The hash function is then applied to this combination, and both the salt and the hashed result are stored.

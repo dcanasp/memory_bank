@@ -7,7 +7,7 @@ A core feature of [[system architecture]]. Security is granting access to the au
 If you truly want security you should have [[Web Security]] and [[Network Security]].
 
 
-A very important fact about security is protecting the *SPOF* (Single Point Of Failure) or in graph theory called *cut vertices* (articulation points). These are the points in your system that if turned off would disconnect all of the services. For example a unique [[database]] or a [[load balancer]] if these fall down, the rest of the program is unable to operate. 
+A very important fact about security is protecting the *SPOF* (Single Point Of Failure) or in graph theory called *cut vertices* (articulation points). These are the points in your system that if turned off would disconnect all of the services. For example a unique [[mid level/databases/Database]] or a [[load balancer]] if these fall down, the rest of the program is unable to operate. 
 
 A final good security concept is to verify on **three** steps.
 - With something you know (a password)
@@ -21,7 +21,7 @@ To achieve security you have compromise on other things like [[Performance]], [[
 ## Detect attacks
 First of all. Let's remember [[some attacks]] that are used today.
 
-- **Detect intrusion**: Comparing each movement a user (via their request) do to what a normal user should do. If a user is trying to access the [[database]] directly or contacting the main servers instead of the [[ApiGateway]] there is something wrong and that user should be banned.
+- **Detect intrusion**: Comparing each movement a user (via their request) do to what a normal user should do. If a user is trying to access the [[mid level/databases/Database]] directly or contacting the main servers instead of the [[ApiGateway]] there is something wrong and that user should be banned.
 	Another important part in intrusion is checking [[IP]]s and connection times, when someone has a abnormal amount of connections, and then the system get's slow. Something happened
 - Verify **message integrity**: Whenever downloading any resources, files, or things like that you should be using a **checksum** or a [[hash]]. This makes impossible someone on the [[some attacks#Man in the Middle (MitM)|middle]] changing the files
 - Detect **message delay**: Your services normally should take an X amount of time, if it starts taking longer than usual it could be a possible attack

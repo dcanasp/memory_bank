@@ -1,6 +1,7 @@
+# S3
 The file storage system, it's pretty simple. Have any image, file, zip, or anything, just turn it to [[binary]] and upload it, you can have different folders
 
-You can also store code on S3, and execute it with a [[Lambda]]
+You can also store code on S3, and execute it with a [[high level/cloud/aws/Compute#Lambda|Lambda]]
 
 >[!info]
 >Buckets name MUST be unique on all regions, but the exist only in one  region, (this is because s3 gives you a public [[url]] where you can see your bucket)
@@ -36,3 +37,7 @@ it's important to note that this should NOT be done on production, on production
 }
 
 ```
+# EBS
+Elastic Block Storage is the storage service that [[high level/cloud/aws/Compute#EC2|EC2]] uses, it's the [[Physical memory]] of a virtual machine, They can be HDD or SDD. The key feature is being able to take snapshots as backups for a EC2 instance, and the encryption by default of the data.
+
+EBS can only be used when attached to an [[high level/cloud/aws/Compute#EC2|EC2]]

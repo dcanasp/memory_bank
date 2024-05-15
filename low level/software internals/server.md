@@ -1,5 +1,5 @@
 A **Server** is a [[computer]] or system that provides resources, data, services, or programs to other computers, known as clients, over a [[network]]. In essence, servers are powerful [[hardware]] or [[software]] engines that deliver critical functionality to other devices or software, allowing multiple users or clients to leverage shared resources.
-Some servers like [[EC2]] are in a single machine
+Currently a lot of developers prefer putting their servers on the [[cloud computing|cloud]]. Examples of this are [[high level/cloud/aws/Compute#EC2|AWS EC2]] and [[high level/cloud/gcp/Compute#Compute Engine|GCP Compute Engine]]
 
 ### Key Characteristics
 
@@ -10,7 +10,7 @@ Some servers like [[EC2]] are in a single machine
 ### Types of Servers
 
 1. **Web Server**: Hosts websites and delivers web pages to client [[web browser]] using [[HTTP]].
-2. **[[Database]] Server**: Provides database services, storing and retrieving data for other applications.
+2. **[[mid level/databases/Database]] Server**: Provides database services, storing and retrieving data for other applications.
 3. **File Server**: Stores and manages files in a central location.
 4. **Mail Server**: Processes and stores emails.
 5. **Application Server**: Hosts and runs specific software applications.

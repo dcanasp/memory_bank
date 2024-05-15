@@ -6,7 +6,7 @@ They are really useful to maintain your data alive when the request are not sure
 there are multiple ways to do it, a simple one, where the message only goes (great for creating a register on the database or something like that). Or another where you wait for a response [[RPC]] (great for task that take some time but will work and you need the response)
 
 
-It's important to understand that in it's core, RabbitMQ it's just a [[database]], so just treat it as such, the database lives on wherever you like. How you connect to the database it's your problem
+It's important to understand that in it's core, RabbitMQ it's just a [[mid level/databases/Database]], so just treat it as such, the database lives on wherever you like. How you connect to the database it's your problem
 
 To create it it's better on [[docker]] (local on windows it's a pain because of erlang), and to connect you need a library that speaks [[amqp]].
 

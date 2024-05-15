@@ -5,7 +5,7 @@ Continuous deployment if there is **NO** human intervention or continuous delive
 
 This deployment pipeline has 3 main metrics of quality
 - cycle time: how long it takes?
-- Traceability: can you check all the steps on why an artifact had a problem? sometimes you store the data of all the system in a special [[database]] 
+- Traceability: can you check all the steps on why an artifact had a problem? sometimes you store the data of all the system in a special [[mid level/databases/Database]] 
 - Repeatability: can you repeat the exact same pipeline multiple times?
 
 # Tactics

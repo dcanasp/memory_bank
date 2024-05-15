@@ -11,13 +11,14 @@ The firewall can block oncoming traffic (inbound rules) and outgoing traffic (ou
 1. **Packet-Filtering Firewalls**: The most basic form, which filters traffic based solely on source and destination [[IP]] addresses, [[port]] numbers, and [[protocols]].
 2. **Stateful Inspection Firewalls**: Keeps track of the state of active connections and makes decisions based on the context of the traffic.
 3. **[[proxy]] Firewalls (Application-Level Gateways)**: Filters network traffic at the application level.
-4. **Next-Generation Firewalls (NGFW)**: Includes features like application awareness, deep packet inspection, intrusion prevention systems, and others.
+4. Web application Firewalls (**WAF**): The ones before your application, a whole service dedicated to block and filter traffic based on some defined rules, they act like (and most likely are) a [[proxy#Reverse Proxy|Reverse proxy]]  
+5. **Next-Generation Firewalls (NGFW)**: Includes features like application awareness, deep packet inspection, intrusion prevention systems, and others.
 
 ### Implementation
 
 - **[[hardware]] Firewalls**: Physical devices placed between your network and the gateway.
 - **[[software]] Firewalls**: Software-based firewalls installed on servers or other network devices.
-- **Cloud Firewalls (Firewall-as-a-Service)**: Provided and managed by third-party service providers in the cloud. An example is [[WAF]]
+- **Cloud Firewalls (Firewall-as-a-Service)**: Provided and managed by third-party service providers in the cloud. An example is [[high level/cloud/aws/Security#WAF|AWS WAF]]
 
 ### Use Cases
 

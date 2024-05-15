@@ -32,21 +32,19 @@ Kubernetes will always be alive, always checking stuff allways ready to scale an
 - **Kublet**: What each machine runs, it communicates with the **control plane**
 - **Pod**: Smallest deployable unit. The container that you are running. each pod gets it's own [[IP]] address (and if restarted it changes)
 - **Service**: permanent [[IP]] for a pod, it's the name of what i will run, the communication between pods
-	- **internal service**: only accessable from within (a [[database]])
+	- **internal service**: only accessible from within (a [[mid level/databases/Database|Database]])
 	- **external service**: the one that can speak with the world (an [[API]])
 - **ingress**: The entry point for your application, it connects to a external service, (it's like a [[proxy]])
-- **ConfigMap**: A file with the conecction data, ip's, urls, and those things. THIS IS NOT SECURE.
-- **secret**: another configMap but this one is **secure**, you save the password, certificates here (enviromental variables)
+- **ConfigMap**: A file with the connection data, ip's, urls, and those things. THIS IS NOT SECURE.
+- **secret**: another configMap but this one is **secure**, you save the password, certificates here (environmental variables)
 - **Volume**: the way to have data permanence, it connects to a permanent storage
 - **Deployment** the process where you say how many pods and services you want, and k8s manages all
-
-
 
 ## data permanence / storage
 Kubernetes does **NOT** manage any **data permanence**. If you have your database in a pod. And it has to restarted or changed, the data would be lost. For this you have to use a **Volume**. It attaches a fiscal storage to your pod. This can be a local storage or a remote storage 
 ## Deployment (scaling / availability)
 to avoid down time, you create multiple replicas this is done via deployments, you don't interact with pods, you just say how many nodes you want and it creates them and manages the load balancer.
-[[database]] can't be scaled using deployments as you would get inconsistent data and errors, for that you use the 
+[[mid level/databases/Database]] can't be scaled using deployments as you would get inconsistent data and errors, for that you use the 
 **Stateful set** (this is not easy). It's better to maintain you databases outside the nodes
 
 ## Basic architecture
@@ -90,7 +88,7 @@ This ingress controller has to be downloaded separately, one it's nginx ingress 
 ## under the hood
 
 has multiple replica set's ready, so if it needs to switch them, or add them it's instantaneous the availability
-uses a **etcd**, [[database#key-value|Key-value]] database 
+uses a **etcd**, [[mid level/databases/Database#key-value|Key-value]] database 
 
 ## minikube / kind
 
@@ -122,7 +120,7 @@ first you create the deployment then
 - `kubectl logs [depl name]`
 - `kubectl describe pod [pod name]`
 If you want to access the machines that you run on k8s you can
-- `kubectl exec -it [pod name] -- bin/bash` now you are on the console. That is assuming that the containers are using [[linux]] (they should)
+- `kubectl exec -it [pod name] -- /bin/bash` now you are on the console. That is assuming that the containers are using [[linux]] (they should)
 
 #### deleting
 Remember that you only interact with deployments, not anything bellow, so if you delete the deployment all bellow get's deleted as well

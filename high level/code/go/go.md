@@ -1,11 +1,17 @@
 #go
-## why/use cases
-
 Created by Google, Go (also called Golang) is a statically typed, [[compiled languages|compiled language]]. It's designed for efficiency and ease of use, combining the performance of lower-level languages like C with the simplicity of higher-level languages.
 
 Ideal for building scalable and high-performance applications. Commonly used for cloud and **server-side applications**, **microservices**, and concurrent processing.
 
 Go does NOT have a build in package manager. Most packages you need are on the standard library
+## Design philosophies
+- Minimum amount of code
+- Reduce boilerplate
+- Reduce abstractions
+- Not the fastest but very performant (dev speed)
+- Error handling 
+- Power and Expressiveness
+- 
 
 ## basics
 - **Starting a Project:**
@@ -295,7 +301,7 @@ This function expects the memory direction of a `sql.Rows` object. Meanwhile `re
 The most important thing is that when printed, pointer objects look ugly. But the can have order. For example
 i have this pointer of type User `p *User` if i try to print it i get `{33 prueba4 fake4@ { true} { true}}` But if the type has public elements i can do `p.Id` and it will give me only `33`. There is **order** **inside** of the **element**
 ## structures
-They are very simple but essential for [[Go#Methods (classes)||methods]]
+They are very simple but essential for [[Go#Methods (classes)|methods]]
 ```go
 type DynamoEntry struct {
 	FilePath string `json:"newName"`

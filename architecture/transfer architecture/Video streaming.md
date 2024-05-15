@@ -29,7 +29,7 @@ Is a popular open-source project that allows **real-time communication** between
 # Practice
 ## DASH (MPEG-DASH)
 
-To use DASH for streaming you will need 2 parts. The video well encoded (with a MPD file) served in a http server (can be a local http-server or on aws [[S3]]). And the second part is a frontend client that understand what dash is (with a library)
+To use DASH for streaming you will need 2 parts. The video well encoded (with a MPD file) served in a http server (can be a local http-server or on aws [[Storage#S3|S3]]). And the second part is a frontend client that understand what dash is (with a library)
 
 ### encoding
 

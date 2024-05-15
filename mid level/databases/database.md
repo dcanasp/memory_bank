@@ -1,4 +1,4 @@
-Where you store your data permanently, saving the data permanently on [[Physical memory]]. **MOSTLY** are [[relational database]] or [[non relational database]], the key difference being where you can create [[relational database|foreign keys]], and the way the data is stored on a low level
+Where you store your data permanently, saving the data permanently on [[Physical memory]]. **MOSTLY** there are [[relational database]] and [[non relational database]], the key difference being where you can create [[relational database|foreign keys]], and the way the data is stored on a low level
 
 Databases are far and wide, most of them use a [[database manager]], or you can talk to them directly, most common for smaller databases like sqlite or cloud databases like firestore. Even the definition of database is complicated, something like [[redis]] can be used as a database
 
@@ -35,8 +35,8 @@ check the [[relational database]] for an actual in-depth explanation but for com
 Every key is unique and it points to a value, it normally works with a [[hashmap]] under the hood (some DB use other solutions). There are no queries nor joins or any complex thing. And you can **store anything**, a string, a full json object, whatever. you simply can **set** a new value and **get** and old one. This are the **FASTEST** databases. As so they are mostly used for caching data and a lot of the times live on memory only.
 
 >[!example]
->[[redis]], memcache and aws [[elasticCache]].
-It's worth mentioning that aws [[dynamoDB]] and [[S3]] also works like this type of DB.
+>[[redis]], memcache and aws [[high level/cloud/aws/Database#ElastiCache|ElastiCache]].
+It's worth mentioning that aws [[high level/cloud/aws/Database#Dynamo Db|Dynamo]] and [[Storage#S3|S3]] also works like this type of DB but do store on [[Physical memory|disk]] the data.
 
 ### when?
 - Lot of **reads** and **writes**
@@ -51,7 +51,7 @@ It's worth mentioning that aws [[dynamoDB]] and [[S3]] also works like this type
 ## wide column
 Similar to key-value (actually uses a Log-structured merge tree), but now you have multiple value spaces, so you can save the user data un different columns. There is **no** **schema** and therefore **no joins** but you **can query**. It handles unstructured data. It's **easier to scale** and scales horizontally great. It can't use [[SQL]] so each DB uses a different query language (CQL for cassandra and scanning on hbase). These databases have 2 main keys, a **partition** key and a **filtering** key, with these you can divide the data in as many partitions as needed and order them as you **wish**
 
-It's great to store time series data and **historical records** that won't be used in this precise moment, like netflix that uses it to store the users viewing preferences and later analyze them (you can save in one column the time and in the other the actual values, and then query them based on time) an example of this is 
+It's great to store time series data and **historical records** that won't be used in this precise moment, like Netflix that uses it to store the users viewing preferences and later analyze them (you can save in one column the time and in the other the actual values, and then query them based on time) an example of this is 
 ```cql
 SELECT * FROM myTable WHERE t = '2017-01-01' - 2d;
 ```
@@ -83,7 +83,7 @@ Most times documents are **grouped** in **collections** that can have subCollect
 > - **firestore** (from firebase)
 > - aws dynamoDB, documentDB and s3 (s3 is a object oriented DB but it's bassicly the same)
 
-### when?******
+### when?
 - **Lot** of writes, **lower** reads, and **NO updates** (singular updates, if you want to change, **change all** the document)
 - You get a lot of **unstructured** data
 - You want to **scale** 
@@ -99,8 +99,10 @@ Most times documents are **grouped** in **collections** that can have subCollect
 As the name implies, are the best databases for search engines, You enter some text (a title) and they create indexes to categorize the similar characteristics among data. This also works on auto completion of words. Finally the data stored on the db can be enhance with multiple algorithms that can solve typos an other errors 
 
 >[!example]
-> - aws **OpenSearch** and **orama** 
-### when?******
+> - **elasticSearch**
+> - **orama**
+> -  aws **OpenSearch**
+### when?
 - You have a **search engine** and want to improve it
 -  **never a primary database**
 

@@ -29,7 +29,7 @@ Created, Running, Deleted, Restarting, Exited, Paused, Dead.
 
 ### Volumes
 
-Docker volumes are persistent storage areas that can be mounted into containers. They allow data to be shared and persisted between containers and the host system. Volumes are particularly useful for storing data that needs to persist beyond the lifecycle of a container, such as databases or logs. These will be explain more in the [[docker#Data persistence]||Data persistence]] section
+Docker volumes are persistent storage areas that can be mounted into containers. They allow data to be shared and persisted between containers and the host system. Volumes are particularly useful for storing data that needs to persist beyond the lifecycle of a container, such as databases or logs. These will be explain more in the [[docker#Data persistence]|Data persistence]] section
 ### Networks
 
 Docker's networking allows containers to communicate with each other and with the outside world. Docker supports different types of [[network]]s, including bridge, host, overlay, and macvlan networks. These networks enable containers to communicate securely and efficiently within the same host or across multiple hosts.

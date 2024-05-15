@@ -1,14 +1,14 @@
-A core feature of [[system architecture]]. And the most asked for quality attribute. Performance is not only algorithm speed[^1]: . It includes disk operations, connection pools, communication bottle necks. The architect is the one who has to manage all of those things, You can have the best algorithm and still have the worse performance. 
+A core feature of [[system architecture]]. And the most asked for quality attribute. Performance is not only algorithm speed[^1]. It includes disk operations, connection pools, communication bottle necks. The architect is the one who has to manage all of those things, You can have the best algorithm and still have the worse performance. 
 
 [^1]: In terms of system architecture as i mentioned there are a lot of important parts of performance. But algorithmic and data structure performance is also a great part. Also, understanding the technologies (including [[hardware]]) that you use and optimizing can be the biggest part of achieving high performance
 
-But mainly there are two problems that hinder performance[^1]:. **Resource management**, how to manage the resources i currently have (things like catching or queues) and **controlling resources demands** (not allowing race conditions, limiting the amount of events at a time).
+But mainly there are two problems that hinder performance[^1]. **Resource management**, how to manage the resources i currently have (things like catching or queues) and **controlling resources demands** (not allowing race conditions, limiting the amount of events at a time).
 
 This note does not focus on Scalability. That is not the only solution for performance, this note takes a look of what to do when you can't handle so much load, there are still great options that don't include scaling vertically or horizontally.
 
 # problem
 
-You have to understand that as with everything software there is a trade-off. In this case the main 3 players are **Time**, **Space** and [[network]] [[bandwidth]]. When speaking of time, this is [[CPU]] speed, the time can be high but the [[CPU]] usage can be low. This players are also related to cost, But you have to decide how to solve a performance problem based on those 3 conditions
+You have to understand that as with everything software there is a trade-off. In this case the main 3 players are **Time**, **Space** and [[network]] [[bandwidth]]. When speaking of time, this is [[CPU]] speed, the time can be high but the [[CPU]] usage can be low. This players are also related to cost, But you have to decide how to solve a performance problem based on those 3 conditions.
 
 # Tactics
 ## Control Resource Demand
@@ -35,10 +35,15 @@ Used heavely on [[microservices]]. It's similar to a [[Sidecar]] But instead of 
 
 This mesh allow for extra customizability. They are able to be customizable based on the context, allowing somethings like [[Deployability#Patterns|Special kinds of testing]]
 ## Load balancer
-[[Load balancer]]. But in short, with this pattern you can have as many [[server]]s as you need
+[[Load balancer]]. But in short, with this pattern you can have as many [[server]]s as you need, having better [[Availability]]
+## Caching
+[[caching]]. But in short, with this patter you can completely ignore the servers, just cache the common most used responses, and that will improve the performance
 ## Throttling
-
 It is used to **limit access** to some important resource or service. In this pattern, there is typically an **intermediary**(a throttler) that monitors requests to the service and determines whether an incoming request can be serviced. This can be added to a load balancer to create some special algorithms 
+## Profiling
+If you aren't sure what is slowing down your code you can use a profiler (most [[programming languages]] have one built in), this profiler will tell you the usage of [[CPU]], heap, time, and much more, the most important part are the graphs, a text graph, a flame graph, Weblist (html views)[^2]
+
+[^2]: most times a single optimizable process is the CPU hog, and only working on it could improve significatively the performance of the whole application (for example a misusage of a [[ORM]], or a easily parallelable task that is running in a blocking manner)
 ## Map-Reduce
 
 This is a very complex pattern and algorithm that can be useful if **data processing** is the **bottleneck**. Firstly it sends the data to a server where to process (Map and reduce) start. Extremely large, unsorted data sets can be efficiently analyzed through the exploitation of parallelism. 

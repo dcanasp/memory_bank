@@ -14,6 +14,28 @@ Another great thing is that relational databases are ACID compliant, this means 
     - All read and write requests within a transaction are not impacted by other transactions. This ensures that the changes being made in one transaction are not available in other transactions.
 4. **Durability:**
     - Durability ensures that once a transaction is committed, its changes are **permanent** and will survive subsequent failures. The committed changes are stored in a durable medium, such as disk storage, and are not lost even if the system crashes. This property guarantees that the database can recover to a consistent state after a failure.
+### Read Phenomena
+defined at the The ANSI/ISO standard SQL 92. Are common isolation problem that can occur on relational database transactions
+1. **Dirty Reads** When concurrent transactions can read changes not committed yet. 
+2. **Non-repeatable Reads** When a single transaction gets different read values on the same data, something changed
+3. **Phantom Reads** Similar to the previous, when a single transaction asks for a set of data (all users with the name `david`) multiple times get a different set of data.
+4. **Lost Updates or Serialization Anomaly** When two transactions that modify the same data start at a similar time, one will commit it's changes, the other will also commit it's changes rewriting over the previous transaction. a problem with parallelism
+### Isolation levels
+To solve these problems relational databases have implemented 3/4 transaction levels. These will prevent/allow the read Phenomena in the same order.
+1. **Read Uncommitted**: allows all read phenomena
+2. **Read Committed**: prevents up to 1. (dirty reads)
+3. **Repeatable Read**: prevents up to 3. (Non-repeatable Reads and Phantom Reads)
+4. **Serializable**: prevents up to 4. (Serialization Anomaly)
+These are in increasing order, so a level 4 serializable will solve all of the read phenomena, and a level 3 will solve the first three only
+
+>[!important]
+>Those levels i've written are exclusive for *MariaDb*/*MySql*. *Postgres* only has 3 levels, as it will never allow Dirty Reads on the image are the actual *Postgres* isolation levels
+>![[postgres_IsolationLevels.png]]
+
+Now it's important to understand that this is a standard. Each database will implement it in a different way. *MariaDb*/*Mysql* will set the isolation level on each session, meanwhile *postgres* will set the **isolation** level for each **transaction**.
+
+some other important facts are that *MariaDb*/*Mysql* will use a lock mechanism meanwhile *Postgres* will use dependencies detection. Also a higher isolation level will generate more errors (as it will prevent modification on more cases than a lower isolation level), therefore if you want to implement a higher isolation you should also implement retry mechanisms. Finally a higher isolation level will be slower, as it will have to do more work for a single transaction
+
 
 ## deep down
 

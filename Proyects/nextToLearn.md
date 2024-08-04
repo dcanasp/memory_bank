@@ -6,8 +6,8 @@ kanban-plugin: basic
 
 ## courses
 
-- [ ] Arden course 20%
-- [ ] arden course 50%
+- [x] Arden course 20%
+- [x] arden course 50%
 - [ ] arden course parallelism
 - [ ] finish arden course
 - [ ] backend course 20%
@@ -33,6 +33,7 @@ kanban-plugin: basic
 - [ ] Really understanding go paralelism
 - [ ] all of   https://gobyexample.com/
 - [ ] some of    https://assets.digitalocean.com/books/how-to-code-in-go.pdf
+- [ ] https://github.com/uber-go/guide/blob/master/src/SUMMARY.md
 
 
 ## db

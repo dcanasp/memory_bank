@@ -1,6 +1,24 @@
 #todo 
 # Go routines
 they work on green threads
+# Build tags
+https://assets.digitalocean.com/books/how-to-code-in-go.pdf
+`go build -tags pro`
+# stack vs heap
+Stack is self cleaning, stack is faster. Heap has garbage colector
+if a function returns a pointer that must be stored on the heap. or it it is declared on the global scope.
+
+That is the scape analysis. If something inside a function is going to remain alive (like a pointer) that value scapes and the compiler will store it in the heap. If not it goes to the stack
+
+if you want to check the scape analisis you can use build tags like this `go build -gcflags -m=2`
+
+## scalability
+if your code (at runtime) starts growing, deploying new go rutines, new stack, and filling it's space. There will be a point where the stack has to be migrated to a bigger contiguous stack. If any data is shared between stacks, it will have to change on all (like a pointer to a variable in the moving stack). For this reason for data that will be **shared** by a **lot of stacks**; it's better to **allocate** it on the **heap**
+# fmt
+the library used for writing is actually really cost full. In terms of compiler function cost. A simple print of `fmt.Println()` has a cost of 80. this is around 20 times more than what it costs to assign a variable and perform a sum to it. This is mainly because the `fmt.Println()` function is not trivial; it involves reflection and interfaces
+
+This is very important to know, because if the function is "cheap" enough it can be optimized with things like function inlining. But if it goes past a defined at compile time budget; It wont be optimized. In other words. Don't leave prints that you don't need
+
 # profiler
 A profiler is 
 there are two main profilers
@@ -47,6 +65,5 @@ GOOS=wasip1 GOARCH=wasm go build -o main.wasm main.go
 ```
 `GOOS` - Target Operating System
 `GOARCH` - Target Platform
-# Build tags
-https://assets.digitalocean.com/books/how-to-code-in-go.pdf
-`go build -tags pro`
+# Jupyter
+this is not something that go offers. but [janpfeifer](https://github.com/janpfeifer/gonb) created a [[docker]] image to use jupyter notebooks with docker

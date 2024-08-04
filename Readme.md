@@ -2,6 +2,9 @@
 
 Welcome to my personal Memory Bank – a living compilation of my accumulated knowledge in computer science, software development, and everything in between. This is not a conventional project, but rather a digital garden where I've sown seeds of information I've learned, both as a software developer and as a computer science student.
 
+This bank follows the **Zettelkasten** learning method, where each note will contain a concept, and it will link to other related concepts (notes). This allows for a **Networked thinking**; A structured way of learning and comprehending the vast world of computer science.
+
+
 
 ## Overview
 
@@ -57,7 +60,6 @@ I welcome contributions that help refine this repository into an even more compr
 ## Extra
 
 To create this memory bank, i did it on [obsidian](https://obsidian.md/). 
-
 
 ## License
 

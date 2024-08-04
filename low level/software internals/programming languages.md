@@ -1,3 +1,6 @@
+#todo: check what are v tables on object oriented programs
+
+
 mainly there are 3 types
 - [[compiled languages]]
 - [[interpreted languages]]

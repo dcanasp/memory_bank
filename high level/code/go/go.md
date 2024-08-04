@@ -4,6 +4,7 @@ Created by Google, Go (also called Golang) is a statically typed, [[compiled lan
 Ideal for building scalable and high-performance applications. Commonly used for cloud and **server-side applications**, **microservices**, and concurrent processing.
 
 Go does NOT have a build in package manager. Most packages you need are on the standard library
+# Theory
 ## Design philosophies
 - Minimum amount of code
 - Reduce boilerplate
@@ -11,8 +12,99 @@ Go does NOT have a build in package manager. Most packages you need are on the s
 - Not the fastest but very performant (dev speed)
 - Error handling 
 - Power and Expressiveness
-- 
+## Data types
+the most important part to understand is that go has **4** key data types. 
+- Basic types: *int*, *float*, *bool*, *rune*, *byte*, *complex* 
+	- These are allocated by default on the **stack**
+	- when passed to a function, they get passed **by value** (a copy is made) (value semantic)
+	- the numeric have their signed, unsigned, 32 64 and 128 bits counterparts
+	- here also lie constants, that will always stay on the **stack**
+- Composite types: *struct*, *array*
+	- These are allocated by default on the **stack
+	- when passed to a function, they get passed **by value** (a copy is made) (value semantic)
+- Reference types: *slice*, *map*, *interface*, *channel*, *function*
+	- These are allocated by default on the **heap** 
+	- These types are managed **via pointers** internally.
+	- when passed to a function, a copy of the pointer is made, meaning the function can modify the underlying data. (pointer semantic)
+- Pointer type: *\** 
+	- Pointers themselves can be allocated on the stack, but they point to variables which can be on the stack or heap.
 
+Remember [[advance go#stack vs heap|Stack vs Heap]] is an important decision, and what you do should understand these data types to create correct code
+## Constants
+Constants in Go are **immutable** values **known** at **compile time**.  And are the only datatype that support type promotion.
+- `const i = 1` 
+- `const j int = 2`
+Both of those variables are *INT* but if you perform a `1.5/i` it will be promoted to a float and operated as a float. if you used a var, it will fail. and return a `(untyped float constant) truncated to int` 
+
+An important aspect is that in this case `1.5/i`, both are constants one is undeclared and the other is declared. But both are treated as constants
+
+Also, Constants have a precision of *128* Bits. And can be declared multiple at a time like this: 
+```go
+const (
+        k =1
+        l = 1
+    )
+```
+### IOTA
+When working with constants they might have a pattern to them. IOTA is used to increment by *1* the previous value and used it on the next constant. Here are some examples for days where each date has a number (1 to 6):
+```go
+	const (
+		lunes = iota
+		martes
+		miercoles
+		// continue the rest
+	)
+```
+another example is byteSize assignation. it will follow that complex equation to assign values (and skip where TB should be)
+```go
+const (
+		KB float64 = 1 << (10 * (iota + 1))
+		MB
+		GB
+		_ //skips terabytes as it's anonimous
+		PB
+	) 
+```
+## Slices
+a slice is an array, but it can grow dynamically. And most importantly. You can slice it. They are created with the *make* keyword, like this: `make([]int, 2)`
+
+Imagine a [[protocols#TCP (Transmission Control Protocol)|TCP]] package being received. if you store it in a slice, you could say `name := data[0,8]`, here you store the first 8 values, with that you can process only that and pass it to multiple functions without the overhead of the whole data slice.
+
+Here is the key part. Any element sliced from a large slice will share the same memory spaces, and deep down you are using pointer semantics. If you modify the sliced slice it will change it's parent.
+
+You can set an slice capacity. It will be the actual allocated length. If left blank it will be the same as the creation length. If your slice length goes over it it will  have to make a copy of the data and move it to a larger space
+## Iteration
+go encases all iteration in the `for` command (so there is no ~~`while`~~). the for has the regular format:
+`for i:=0;i<x;i++{}` a while loop would be: `for x!=clause` or `for ;x!=clause;`. Finally there are two types of *for each*
+
+- `for pos := range(x)` this is the same as this `for pos:=0;pos<len(x);pos++`
+- `for pos,data := range(x)` this actually uses the **same** **variable** on each iteration, therefore `&data` will always be the same
+```go
+var data int 
+for pos:=0;pos< len(x);pos++{
+	data = x[pos]
+}
+```
+
+> [!danger] CRITICAL 
+> This is outdated. from go 1.22 both of the *for each* will do the same, they will no longer create a variable, but use pointer semantics to create a new reference to the data
+
+In the new schema this is what this code `for pos,data := range(x)` does. therefore `&data` will always change
+```go
+for pos:=0;pos< len(x);pos++{
+	data := x[pos]
+}
+```
+
+## interfaces vs structs
+An interface is a valueless type, meanwhile a struct does have a value, it has a size defined, it has meaning. Interfaces don't
+## Init()
+Whenever you want some functions to run before the main func. The image shows a very descriptive execution order (from farthest to close)
+![[initOrderGolang.png]]
+## Go routines
+
+this file is long enough, check [[advance go]]
+# Practice
 ## basics
 - **Starting a Project:**
     
@@ -288,7 +380,6 @@ displayName := user.DisplayName()
 ### interfaces
 You can also create interfaces. An _interface type_ is defined as a set of method signatures. Take into account that. A type implements an interface by implementing its methods. There is **no explicit declaration** of intent, no "implements" keyword.
 
-#todo 
 ## pointers
 
 In short. `&test` is a **pointer**, it points to the location of test, meanwhile `*test` is the **value of a pointer** OR the reference for a **pointer in a function**. So for example
@@ -296,7 +387,7 @@ In short. `&test` is a **pointer**, it points to the location of test, meanwhile
 ```go
 func ReturnAll(rows *sql.Rows) {}
 ```
-This function expects the memory direction of a `sql.Rows` object. Meanwhile `result = append(result, *rows)` is the actual value of the rows variable
+This function expects the memory direction of a `sql.Rows` object. Meanwhile `result = append(result, *rows)` is the actual value of the rows variable.
 
 The most important thing is that when printed, pointer objects look ugly. But the can have order. For example
 i have this pointer of type User `p *User` if i try to print it i get `{33 prueba4 fake4@ { true} { true}}` But if the type has public elements i can do `p.Id` and it will give me only `33`. There is **order** **inside** of the **element**
@@ -310,12 +401,6 @@ type DynamoEntry struct {
 }
 ```
 in this example i have a struct with the 3 different element types, one as a string that has an *annotation* for any json parser, if it is parsed on json the element will be called *newName*, another one is another struct, and does NOT have a name, so all of its data will be on the same level as the other params. And finally normal int element 
-## Init()
-Whenever you want some functions to run before the main func. The image shows a very descriptive execution order (from farthest to close)
-![[initOrderGolang.png]]
-## Go routines
-
-this file is long enough, check [[advance go]]
 ## database conection
 You can use an [[orm]] if you really want but the standard library is more than enough in most cases
 

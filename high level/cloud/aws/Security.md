@@ -8,7 +8,7 @@ The IAM account you create is called an User, on a single Aws account you can ha
 You create a group to assign Users with the same policies. So for example, readers are only able to read, meanwhile admins can access the billing console  
 Groups are for the living
 ## Role
-role is a preset of policies for services. Your [[server]] should not be able to delete your [[mid level/databases/Database|Database]]. You assing a role to it so no matter what, it can't do it.
+role is a preset of policies for services. Your [[server]] should not be able to delete your [[mid level/databases/Database|Database]]. You assign a role to it so no matter what, it can't do it.
 Roles are for the non-living.
 ## Recommended practices
 - Never use Root user

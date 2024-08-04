@@ -7,7 +7,7 @@ A core feature of [[system architecture]]. Security is granting access to the au
 If you truly want security you should have [[Web Security]] and [[Network Security]].
 
 
-A very important fact about security is protecting the *SPOF* (Single Point Of Failure) or in graph theory called *cut vertices* (articulation points). These are the points in your system that if turned off would disconnect all of the services. For example a unique [[mid level/databases/Database]] or a [[load balancer]] if these fall down, the rest of the program is unable to operate. 
+A very important fact about security is protecting the *SPOF* (Single Point Of Failure) or in graph theory called *cut vertices* (articulation points). These are the points in your system that if turned off would disconnect all of the services. For example a unique [[mid level/databases/Database|Database]] or a [[load balancer]] if these fall down, the rest of the program is unable to operate. 
 
 A final good security concept is to verify on **three** steps.
 - With something you know (a password)

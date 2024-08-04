@@ -1,6 +1,6 @@
 A core feature of [[system architecture]]. Currently you deploy as soon as possible, with little changes at a time. There is no point on waiting for giant changes
 
-# CD
+# [[CD]]
 Continuous deployment if there is **NO** human intervention or continuous delivery if there is **some** human intervention
 
 This deployment pipeline has 3 main metrics of quality

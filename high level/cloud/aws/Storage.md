@@ -37,6 +37,32 @@ it's important to note that this should NOT be done on production, on production
 }
 
 ```
+and for all the cors:
+```json
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE",
+            "HEAD"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": [
+            "ETag",
+            "x-amz-meta-custom-header"
+        ],
+        "MaxAgeSeconds": 3000
+    }
+]
+
+```
 # EBS
 Elastic Block Storage is the storage service that [[high level/cloud/aws/Compute#EC2|EC2]] uses, it's the [[Physical memory]] of a virtual machine, They can be HDD or SDD. The key feature is being able to take snapshots as backups for a EC2 instance, and the encryption by default of the data.
 

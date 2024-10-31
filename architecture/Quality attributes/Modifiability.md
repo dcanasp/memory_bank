@@ -1,6 +1,9 @@
 A core feature of [[system architecture]]. Some times modifiability is misunderstood, it's not just being changed easily, it has multiple names and parts, **Scalability**, **Variability**, **Portability**, **location** independence, Are all part of a modifiable system.
 
-Most of the cost in software systems occurs after it has been initially released, if you want a modifiable system. You have to wonder what can change, what is the likelihood of change, when and who is going to do those changes, what is the cost of changing. Making a system modifiable comes with a cost, you have to ponder if you really need it. If the difficulty of making it modifiable outweighs the value of it, don't do it
+**Most of the cost** in software systems occurs **after** it has been **initially released**, if you want a modifiable system. You have to wonder what can change, what is the likelihood of change, when and who is going to do those changes, what is the cost of changing. Making a system modifiable comes with a cost, you have to ponder if you really need it. If the difficulty of making it modifiable outweighs the value of it, don't do it
+
+is also important in systems that need to accommodate **peak loads**, such as online shopping during holiday seasons or sudden spikes in user activity due to viral events. Or changing some features for the holidays and returning to the original months later
+
 
 What are the main problems with modifiability?
 
@@ -8,7 +11,12 @@ What are the main problems with modifiability?
 - **cohesion**: The measure that modules only do a single task or related to them, they should not be doing infinite stuff
 - **size** of **modules**: self explanatory, and normally a bigger size also has lower cohesion
 - binding **time** of **modification**: am i able to take changes in latter stages of development?, if not cost will rise
-
+# Scaling
+Scaling is an escencial part of a modifiable system. There are mainly two types of scalability in modern systems
+## Vertical scaling
+Vertical Scaling is adding more resources to the [[server]] where you are running your code. These are more commonly [[CPU]] or [[RAM]]
+## Horizontal scaling
+Horizontal scaling is adding more [[server]]s to the existing pool of machines. these new machines will handle a part of the load that arrives usually using techniques as. [[Load balancer|load balancing]], sharding, partitioning, and distributed processing. 
 # Tactics
 ## Increase Cohesion
 - **Split module**: Each module should only do what they are required, No god classes[^1]: 

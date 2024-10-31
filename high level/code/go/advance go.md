@@ -5,15 +5,15 @@ they work on green threads
 https://assets.digitalocean.com/books/how-to-code-in-go.pdf
 `go build -tags pro`
 # stack vs heap
-Stack is self cleaning, stack is faster. Heap has garbage colector
+Stack is self cleaning, stack is faster. Heap has garbage collector
 if a function returns a pointer that must be stored on the heap. or it it is declared on the global scope.
 
-That is the scape analysis. If something inside a function is going to remain alive (like a pointer) that value scapes and the compiler will store it in the heap. If not it goes to the stack
+That is the scape analysis. If something inside a function is going to remain alive (like a pointer) that value escapes and the compiler will store it in the heap. If not it goes to the stack
 
-if you want to check the scape analisis you can use build tags like this `go build -gcflags -m=2`
+if you want to check the scape analysis you can use build tags like this `go build -gcflags -m=2`
 
 ## scalability
-if your code (at runtime) starts growing, deploying new go rutines, new stack, and filling it's space. There will be a point where the stack has to be migrated to a bigger contiguous stack. If any data is shared between stacks, it will have to change on all (like a pointer to a variable in the moving stack). For this reason for data that will be **shared** by a **lot of stacks**; it's better to **allocate** it on the **heap**
+if your code (at runtime) starts growing, deploying new go routines, new stack, and filling it's space. There will be a point where the stack has to be migrated to a bigger contiguous stack. If any data is shared between stacks, it will have to change on all (like a pointer to a variable in the moving stack). For this reason for data that will be **shared** by a **lot of stacks**; it's better to **allocate** it on the **heap**
 # fmt
 the library used for writing is actually really cost full. In terms of compiler function cost. A simple print of `fmt.Println()` has a cost of 80. this is around 20 times more than what it costs to assign a variable and perform a sum to it. This is mainly because the `fmt.Println()` function is not trivial; it involves reflection and interfaces
 

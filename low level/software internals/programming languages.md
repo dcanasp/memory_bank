@@ -17,10 +17,10 @@ the best code it's NOT the fastest, it's the organized one, it's the understanda
 
 the ones i mainly know:
 
-- [[Node.js]]
+- [[dotnet]]
 - [[typescript]]
 - [[Go]]
+- [[Node.js]]
 - [[python]]
 - [[java]]
-- [[c#]]
 - 

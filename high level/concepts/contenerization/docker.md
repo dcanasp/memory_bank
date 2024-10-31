@@ -83,6 +83,7 @@ On [[windows]] by default `host.docker.internal` is defined, but on [[linux]] it
 when having [[podman]] on the same computer you get some problems as they use some shared components. The fix that worked for me is stopping the task `winssh-proxy.exe` (That is located in the redhad/podman program files folder). Seems that (sometimes) can't run podman and docker at the same time
 
 # Practice
+#todo
 ## Dockerfile
 ... 
 ## docker compose

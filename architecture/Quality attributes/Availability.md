@@ -10,10 +10,14 @@ MTTR	=	mean time to repair
 As i said availability should not come alone. It must have this other concepts for true availability:
 ## Reliability
 Ability to operate **without** **errors**. Your system should have all cases covered.
+
+Reliable systems must operate as expected consistently, without experiencing unexpected failures, errors, or disruptions. There should be no way to break these systems even on potential application breakdown
 ## Resilience
 Being able to manage failures effectively. 
 ## Fault tolerance
-Being able to **continue in operation**, even in case of failures
+Being able to **continue in operation**, even in case of failures.
+
+ if things falls, A fault-tolerant system is designed to detect, isolate, and recover from faults without experiencing complete failure or downtime.
 ## SPOF
 *S*ingle *P*oints *O*f *F*ailure should be eradicated. If these fail all of the system falls. There is no availability now
 
@@ -38,7 +42,7 @@ Being able to **continue in operation**, even in case of failures
 
 # Patterns
 common implementation of the previous tactics
-
+![[AvailabilityProtection.png]]
 - **Triple** modular **redundancy** (TMR): an implementation of Voting. Three modules do the same job, And they follow the majority
 - **Process pairs**: doing checkpoints and rollbacks
 ## Redundant spare

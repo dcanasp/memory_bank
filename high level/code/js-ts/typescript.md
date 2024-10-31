@@ -1,4 +1,4 @@
-TypeScript is a superset of JavaScript that adds optional static typing and powerful features to the language. It builds upon familiar JavaScript syntax, making it easy to learn for existing JavaScript developers.
+TypeScript is a superset of [[JavaScript]] that adds optional static typing and powerful features to the language. It builds upon familiar JavaScript syntax, making it easy to learn for existing JavaScript developers.
 
 Typescript is a [[transpiled languages|Transpiled language]] so it transpiles to javascript. Bellow i tell how to add typescript
 

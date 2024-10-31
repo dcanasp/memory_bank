@@ -1,6 +1,6 @@
 Mainly used in supersets
 
-Transpilers (source-to-source compilers) convert code from one programming language into another. For example, TypeScript is transpiled into JavaScript, which can then be interpreted or further compiled. The output is usually easier to optimize or debug than directly compiled machine code but still has to be executed by an interpreter or another compiler.
+Transpilers (source-to-source compilers) convert code from one programming language into another. For example, [[TypeScript]] is transpiled into [[JavaScript]], which can then be interpreted or further compiled. The output is usually easier to optimize or debug than directly compiled machine code but still has to be executed by an interpreter or another compiler.
 
 ##### Advantages
 

@@ -155,7 +155,7 @@ server.bindAsync("127.0.0.1:50000", serverCredentials, (error, port) => {
 ```
 
 #### gRPC client
-```javascript
+```js
 //grpc definition
 const packageDef = loadSync("./src/proto/videoQueue.proto", {});
 const grpcObject = loadPackageDefinition(packageDef);

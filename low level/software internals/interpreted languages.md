@@ -1,4 +1,4 @@
-interpreted languages like Python, Ruby, and JavaScript, an interpreter executes the program line-by-line, translating each line into a series of machine-code instructions that are executed immediately.
+interpreted languages like Python, Ruby, and [[JavaScript]], an interpreter executes the program line-by-line, translating each line into a series of machine-code instructions that are executed immediately.
 
 ##### Advantages
 

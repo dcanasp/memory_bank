@@ -1,6 +1,6 @@
-how do things communicate through a [[network]], they normally exchange a document, or some format (JSON file, HTTP header ...)  mainly 2 distinctions, syncronous and asyncronous, 
+how do things communicate through a [[network]], they normally exchange a document, or some format (JSON file, HTTP header ...)  mainly 2 distinctions, synchronous and asynchronous, 
 # based on synchrony 
-### syncronous 
+### synchronous 
 Synchronous communication is a method where the sender **waits** for the receiver to process the message and return a response. This communication type is common in various application programming interfaces (APIs), particularly those using HTTP protocol.
 #### Key Characteristics
 - The sender blocks and waits for the receiver to process and respond.
@@ -11,7 +11,7 @@ Synchronous communication is a method where the sender **waits** for the receive
 - **Lack of Resilience**: If one part of the communication chain fails, it can lead to a breakdown of the entire process.
 - **Inefficiency**: Waiting for responses can lead to increased latency and reduced overall system efficiency.
 
-### asyncronous
+### asynchronous
 In asynchronous communication, the sender does not wait for an immediate response from the receiver. This method is more **flexible** and often more resilient to failures.
 #### Key Characteristics
 - The sender sends a message and continues its process without waiting for a response.

@@ -36,9 +36,9 @@ examples
 
 ## problem scope
 
+firstly you define the users that are going to consume your product, how many of them? at what hours? what are the time concerns? what are the availability concerns? what are the security concerns? how much budged do we have? What does the user want?
 ## define architecture style
-
-
+after answering all of the previous questions, start thinking on what architectural style suits your needs best, if it is a highly intensive program microservices might be the best, if availability is not a concern a monolith should suffice.
 # Requirements
 These are the Non-functional requirements (NFRs) or Quality attributes. Even though they are non functional they are as **important** as the functional ones. They are defined on the ISO/IEC 25010 
 
@@ -60,13 +60,13 @@ These NFR have 6 parts
 
 ## NFR
 Here are the most common NFR. (Most of) These have a note of their own, Please check it to see what they are, the tactics and patterns
-#todo scaling
 
 ## [[Availability]]
 ## [[Deployability]]
 ## [[Integrability]]
 ## [[Modifiability]]
 ## [[Performance]]
+## [[architecture/Quality attributes/security|security]]
 ## safety
 A very important but sometimes overlook factor in system architecture is the safety of your code, specially when working with real world data. You have to be sure that you don't miss interpret important data from sensors, facial recognition tools or even [[AI]], Doing so could harm or put in harm's way some unsuspecting user.
 
@@ -76,7 +76,6 @@ This is a very specific problem, therefore if you face it, please research more 
 	- **Redundant sensors**: two sensors are one and one is none. Don't risk it
 	- **Monitor-actuator**: Before doing something, quantify the expected output (roughly). If it fails something might be wrong
 	- **Separated safety**: There are some parts that critical, have those audited as often as possible, the non critical can have their own server
-## [[architecture/Quality attributes/security]]
 ## usability
 >People ignore design that ignores people
 

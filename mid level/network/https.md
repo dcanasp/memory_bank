@@ -17,7 +17,12 @@ this whole process is greatly detailed on the [[SSL|TLS]] note, please see it
 ### Man-in-the-Middle (MitM) Attacks
 By encrypting the data transferred between the client and server, HTTPS defends against MitM attacks, where a third party could potentially intercept and alter the communication.
 
-to verify HTTPS with web pages, you rely on your [[DNS]], the attacker any attacker **can't** create  
+### [[DNS]] Poisoning
+
+When a page buys and uses a **verified HTTPS** certificate,  when using a trusted [[web browser]] you will be protected from **local DNS poisoning**. 
+
+To achieve this the web browser must consult the [[IP]]s of the page you are trying to access without trusting blindly on your [[DNS]] record (that could have been tampered). The important part is that only pages with HTTPS get this extra layer of security
+
 ### Eavesdropping Attacks
 HTTPS encrypts the data being transmitted, which prevents unauthorized parties from reading the information as it travels through the network.
 ### Tampering

@@ -1,4 +1,4 @@
-npm, short for Node Package Manager,  is the world's largest software registry, used primarily with [[Node.js]]. It allows users to install, share, and manage package dependencies in their Node.js projects. It simplifies the process of managing dependencies by allowing you to easily install, update, and remove packages from your project. Beyond its core functionality, npm offers various functionalities that enhance the development experience.
+npm, short for Node Package Manager,  is the world's largest software registry, used primarily with the language [[Javascript]] or [[Node.js]]. It allows users to install, share, and manage package dependencies in their Node.js projects. It simplifies the process of managing dependencies by allowing you to easily install, update, and remove packages from your project. Beyond its core functionality, npm offers various functionalities that enhance the development experience.
 
 alternatives to npm are
 - yarn

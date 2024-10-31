@@ -1,4 +1,4 @@
-**NVM (Node Version Manager)** is a script that allows you to manage multiple Node.js versions on your system. This is helpful if you need to work with different versions of Node.js for different projects, or if you want to test your code on different versions before deploying it to production.
+**NVM (Node Version Manager)** is a script that allows you to manage multiple [[Node.js]] versions on your system. This is helpful if you need to work with different versions of Node.js for different projects, or if you want to test your code on different versions before deploying it to production.
 
 **Features:**
 - Install and use multiple Node.js versions

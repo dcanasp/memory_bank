@@ -17,4 +17,4 @@ A lambda is the same as a [[server]], it's the whole thing, but instead of being
 you call it with a [[Application integration#API Gateway|Aws API Gateway]] if you need your lambda as a result of a http petition, or with a [[Application integration#Event bridge|Event Bridge]] if you just want a [[Cron]] to open your code
 
 # Elastic Beanstalk
-You add the code and it will manage all of the infraestructure to fit your needs (no over nor under scaling)
+You add the code and it will manage all of the infrastructure to fit your needs (no over nor under scaling)

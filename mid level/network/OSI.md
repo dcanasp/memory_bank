@@ -9,6 +9,8 @@
 	Creating the channels for machines to talk to each other
 - Transport
 	Sending (and losing) the packages, [[three way handshake]]
+	- TCP
+	- UDP
 - [[Network]]
 	Where you send your packages to a host
 - Data link

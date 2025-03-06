@@ -3,7 +3,8 @@ Cloud computing is a model for delivering computing resources, such as [[server]
 The benefits of cloud computing include:
 
 - **Scalability**: Resources can be easily scaled up or down based on demand, allowing businesses to handle varying workloads efficiently.
-- **Cost-effectiveness for small users**:[[cloud computing#Pricing at scale|[1] ]] Pay-per-use pricing models reduce costs, as businesses only pay for what they use instead of investing in expensive infrastructure .
+- **Cost-effectiveness for small users**:[[cloud computing#Pricing at scale|[1] ]] Pay-per-use pricing models reduce costs, as businesses only pay for what they use instead of investing in expensive infrastructure.
+- **Elasticity**: The ability to grow or shrink resources at a moment notice. 
 - **Global Reach**: Cloud providers offer data centers across the globe, enabling low-latency access to services and content delivery to users worldwide.
 - **Automatic Updates and Maintenance**: Cloud services are continuously updated with new features and security patches without requiring manual intervention from users.
 - **Disaster Recovery and Backup**: Cloud providers offer robust solutions for data redundancy and recovery in the event of data loss or infrastructure failure.

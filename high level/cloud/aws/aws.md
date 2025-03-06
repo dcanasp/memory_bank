@@ -8,6 +8,9 @@ AWS provides Mainly 3 types of services
 examples of what you can find are raw [[server]]s, auto managed and scaled [[server]]s, all types of [[mid level/databases/Database|databases]] and storage options, all the [[network]] you might need and already working and usable software, some times even giants like Netflix prefer to use AWS services instead of doing their own.
 
 # Core Concepts
+## Shared responsibility model
+
+Aws will do some part, but you must also do your part on maintaining secure your services. Aws is not responsible of your customer's data. Nor for how you manage your network security. If you fail at providing for your users, that's on you, and not on Aws. Meanwhile Aws is responsible on maintaining the [[hardware]], You will never worry about that.
 ## Region
 In AWS, services are **always** **associated** with a specific **region**[^1]. This geographical designation is crucial because it affects pricing, availability, and the types of services offered. Each region has its own set of resources and independent pricing structure, and service availability can vary from one region to another. Notably, not all regions offer the same AWS services.
 

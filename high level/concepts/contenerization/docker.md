@@ -36,19 +36,13 @@ Docker's networking allows containers to communicate with each other and with th
 ### Secrets
 
 Docker secrets is a feature that helps manage sensitive data such as passwords, tokens, and ssh keys. Using Docker secrets, sensitive data is encrypted during transit and at rest, providing a safer way to use confidential data.
-
-### Virtualization vs Containerization
-
-- **Virtualization** allows you to run multiple operating systems on a single [[hardware]]'s [[OS]] layer. Each VM has its own dedicated resources, and is isolated from the host system and other VMs. It's for heavyweight jobs  
-- **Containerization**, on the other hand, involves packaging an application and its dependencies into a lightweight, portable container that **shares** the **host's** operating system **kernel**. Containers are more lightweight and efficient than VMs because they don't require a separate operating system for each instance. However, they provide a lower level of isolation compared to VMs. Docker is on this division
-
 ### Docker Compose
 
 Docker Compose is a tool that allows you to define and run multi-container Docker applications. It uses a YAML file to specify the services, networks, volumes, and other configurations for the application. Docker Compose simplifies the process of running and managing complex applications that consist of multiple containers.
 
 ### Docker Swarm
 
-Docker Swarm is a clustering and scheduling tool for Docker containers. It allows you to create and manage a cluster of Docker nodes, making it easier to deploy and scale applications across multiple hosts. This is similar to [[Kubernetes]] as an orchester 
+[[Docker Swarm]] is a clustering and scheduling tool for Docker containers. It allows you to create and manage a cluster of Docker nodes, making it easier to deploy and scale applications across multiple hosts. This is similar to [[Kubernetes]] as an orchester 
 
 ### Docker Registry
 

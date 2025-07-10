@@ -56,8 +56,8 @@ DROP TABLE employees;
 - **Adding a Column:**
     `ALTER TABLE employees ADD COLUMN emp_department VARCHAR(50);`
 ```sql
-ALTER TABLE employees
-ADD COLUMN emp_department VARCHAR(50);
+	ALTER TABLE employees
+	ADD COLUMN emp_department VARCHAR(50);
 ```
   
 ### `INSERT` - Adding Data to a Table

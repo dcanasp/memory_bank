@@ -24,6 +24,7 @@ Cryptography is the science and art of securing communication and information th
 
 - **Key Sharing:** The same key is used for both encryption and decryption.
 - **Examples:** DES (Data Encryption Standard), AES (Advanced Encryption Standard).
+- The key is interchanged thought a secure channel (for example a diffie hellman algorithm)
 
 ### **Asymmetric Key Cryptography (Public Key Cryptography)**
 

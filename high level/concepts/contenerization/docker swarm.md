@@ -39,7 +39,7 @@ quoting the official documentation:
 
 > Port *4789* UDP (configurable) for overlay network traffic
 
-as I've encountered it, on [[linux]] (DinD) those ports are open by default, but on [[windows]] they are not, and you have to change your [[firewall]] rules for the swarm to work. But it won't tell you what is wrong
+as I've encountered it, on [[Linux]] (DinD) those ports are open by default, but on [[windows]] they are not, and you have to change your [[firewall]] rules for the swarm to work. But it won't tell you what is wrong
 
 ### docker compose
 swarm has a different purpose than [[docker#Docker Compose|Docker compose]], therefore a docker compose file won't always works, as swarm is meant to scale.

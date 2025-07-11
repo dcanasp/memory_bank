@@ -72,7 +72,7 @@ runc, changable
 ### Mount binds
 A lot of times Mount binds data persistence wont be able to create files or delete them, this is because of it's dependence on the host machine, this is something that does not happen on volumes
 ### windows vs linux
-On [[windows]] by default `host.docker.internal` is defined, but on [[linux]] it does NOT exist by default, you have to add this flag `--add-host=host.docker.internal:host-gateway` (or putting the ip if it's a http request)
+On [[windows]] by default `host.docker.internal` is defined, but on [[Linux]] it does NOT exist by default, you have to add this flag `--add-host=host.docker.internal:host-gateway` (or putting the ip if it's a http request)
 ### podman
 when having [[podman]] on the same computer you get some problems as they use some shared components. The fix that worked for me is stopping the task `winssh-proxy.exe` (That is located in the redhad/podman program files folder). Seems that (sometimes) can't run podman and docker at the same time
 

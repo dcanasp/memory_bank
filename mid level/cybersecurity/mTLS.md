@@ -43,7 +43,7 @@ In **most cases**, mTLS is an **over kill**, if you are creating a normal servic
 # practice
 
 ## create all necessary files
-All of this process was done using oppenssl and a [[docker]] [[linux]] machine. 
+All of this process was done using oppenssl and a [[docker]] [[Linux]] machine. 
 ### Create CA Key and Certificate
 #### Generate the Root CA's Private Key
 ```bash

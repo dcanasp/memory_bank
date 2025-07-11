@@ -2,7 +2,7 @@
 TABLE
 file.ctime as Created
 From #todo 
-Sort file.ctime DESC
+Sort file.ctime ASC
 Limit 20
 ```
 

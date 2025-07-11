@@ -1,6 +1,65 @@
 #todo 
 # Go routines
 they work on green threads
+# building other OS
+You can change the compilation [[OS]] changing some environment variables, to see the full list go to [the documentation](https://go.dev/doc/install/source#environment). 
+
+
+>[!tip] 
+In windows is important to use *CMD* if you are goint to run these commands
+
+code for building to android:
+```sh
+set "GOOS=android" && set "GOARCH=arm64" && go build .\main.go 
+```
+code for building to WebAssembly:
+```shell
+set "GOOS=wasip1" && set "GOARCH=wasm" && 
+go build -o main.wasm main.go
+```
+`GOOS` - Target Operating System
+`GOARCH` - Target Platform
+
+# directives
+inside of comments you can add useful directives to you code. Here is the list of the most notable
+## Build
+```go
+//go:build linux && amd64 
+// +build !debug
+
+package mypackage
+```
+with this directive i can build into other OS without having to set the environment variable each time (or changing the global variable)
+
+The +build directive is also a build tag. Where i set that the environment is not debug 
+## embed
+```go
+//go:embed config.json
+var config []byte
+```
+This will add a file or folder to the compiled binary of a program. Very useful to distribute a binary on multiple computers as it loads the file dependencies. 
+
+Obviously the binary will be larger, but it will **NOT** load it all to [[RAM]] nor heap. As it lazy loads each page of the content
+## linkname
+```go
+import _"unsafe"
+
+//go:linkname myLocalFunc runtime.myPrivateFunc func myLocalFunc() int
+```
+with this you can link a function from another package in an unsafe manner. This is a terrible practice, but if needed allows you to link code that should not be there
+## nosplit
+```go
+//go:nosplit
+func MyFunction() { 
+}
+```
+This will prevent stack splitting, Stack splitting is just growing the stack space and copying it's contents to a new stack. Only use it if you know what you are doing, this could generate an stack overflow
+## noescape
+This will prevent a variable from scaping it's scope (scape analisis). Making it never reach the heap
+## generate
+`//go:generate echo hello`
+when you run `go generate` all of the generate directives will be triggered. Running those commands. Instead of an echo imagine them running your mocks, or your tests.
+
 # Build tags
 https://assets.digitalocean.com/books/how-to-code-in-go.pdf
 `go build -tags pro`
@@ -59,11 +118,5 @@ inside of any of those you can do a *top* to see the usage of each of those cate
 or the heap usage 
 ![[goProfillerHeap.png]]
 
-# building other OS
-```shell
-GOOS=wasip1 GOARCH=wasm go build -o main.wasm main.go
-```
-`GOOS` - Target Operating System
-`GOARCH` - Target Platform
 # Jupyter
 this is not something that go offers. but [janpfeifer](https://github.com/janpfeifer/gonb) created a [[docker]] image to use jupyter notebooks with docker

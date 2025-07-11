@@ -120,7 +120,7 @@ first you create the deployment then
 - `kubectl logs [depl name]`
 - `kubectl describe pod [pod name]`
 If you want to access the machines that you run on k8s you can
-- `kubectl exec -it [pod name] -- /bin/bash` now you are on the console. That is assuming that the containers are using [[linux]] (they should)
+- `kubectl exec -it [pod name] -- /bin/bash` now you are on the console. That is assuming that the containers are using [[Linux]] (they should)
 
 #### deleting
 Remember that you only interact with deployments, not anything bellow, so if you delete the deployment all bellow get's deleted as well

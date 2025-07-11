@@ -36,3 +36,6 @@ interface IEquatable<T>
 }
 ```
 Essential for mocking 
+
+## Delegates
+## Events

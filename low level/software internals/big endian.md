@@ -1,4 +1,4 @@
-###### Used in [[linux]]
+###### Used in [[Linux]]
 
 refers to the endianness or the [[binary|byte]] order in which data is stored. These concepts are critical for data serialization, network communications, and interoperability between different computer architectures.
 

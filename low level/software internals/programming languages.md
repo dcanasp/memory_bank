@@ -1,6 +1,3 @@
-#todo: check what are v tables on object oriented programs
-
-
 mainly there are 3 types
 - [[compiled languages]]
 - [[interpreted languages]]
@@ -23,4 +20,5 @@ the ones i mainly know:
 - [[Node.js]]
 - [[python]]
 - [[java]]
-- 
+
+

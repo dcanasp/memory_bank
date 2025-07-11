@@ -3,7 +3,7 @@
 # Practice
 ## Server
 These are the commands used to create an NFS server
-(using a Debian based [[OS]]. But they are the same on any other [[linux]] OS)
+(using a Debian based [[OS]]. But they are the same on any other [[Linux]] OS)
 {} will be used as placeholders 
 ```sh
 sudo apt update
